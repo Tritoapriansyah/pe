@@ -56,7 +56,7 @@
     "tiktok-scraper-without-watermark": "^1.0.6",
     "uninstall": "0.0.0",
     "ytsr": "^3.5.0",
-    "terminal-kit": "^2.1.6"
+    "terminal-kit": "^1.49.4"
   },
   "devDependencies": {},
   "repository": {
