@@ -1,40 +1,3 @@
-/*
-
-   INI BOT FREE BUAT SIAPA SAJA JANGAN DI JUAL
-   © : RUIN FF
-_-_-_--_-_-_--_-_-_--_-_-_-_-_--_-_-_-_-_--_-_-_--_-_-_-_--__-_-_-_--_-_-_--_-_-_-
-   Jika ingin custom / beli bot seperti ini silahkan
-   caht wa.me/6285855159230
-   
-   SUBSCRIBE YOUTUBE ME : RUIN FF
-   IG : @ardiwj13
-   TIK TOK : @lazu.ardii
-   
-   UNTUK UBAH LINK QR NY
-OVO : OV1876
-GOPAY : GPY18ui876
-DANA : DNA187736
-copy terus ganti link gambar qr kalian 
-   ====================================================[ BOTZ RUIN FF ]==============================================================
-▒KASIH NAMA GW LAH KALO MO COMOT▒▒▒
-▒▒▒▒▒▒▒▒▄▄▄▄▄▄▄▄▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒Lolita Bot
-▒▒█▒▒▒▄██████████▄▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒Lolita Bot
-▒█▐▒▒▒████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒Lolita Bot
-▒▌▐▒▒██▄▀██████▀▄██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒Lolita Bot
-▐┼▐▒▒██▄▄▄▄██▄▄▄▄██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒Lolita Bot
-▐┼▐▒▒██████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒Lolita Bot
-▐▄▐████─▀▐▐▀█─█─▌▐██▄▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒Lolita Bot
-▒▒█████──────────▐███▌▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒Lolita Bot
-▒▒█▀▀██▄█─▄───▐─▄███▀▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒Lolita Bot
-▒▒█▒▒███████▄██████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒Lolita Bot
-▒▒▒▒▒██████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒Lolita Bot
-▒▒▒▒▒██████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒Lolita Bot
-▒▒▒▒▒█████████▐▌██▌▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒Lolita Bot
-▒▒▒▒▒▐▀▐▒▌▀█▀▒▐▒█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒Lolita Bot
-▒▒▒▒▒▒▒▒▒▒▒▐▒▒▒▒▌▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒Lolita Bot
-▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒Lolita Bot
-Lolita Bot Lolita Bot Lolita Bot Lolita Bot SUBSC
-*/
 const
 	{
 	    WAConnection: _WAConnection,
@@ -127,28 +90,24 @@ tttawal= ["0️⃣","1️⃣","2️⃣","3️⃣","4️⃣","5️⃣","6️⃣",
 cmhit = []
 autorespon = false
 playmusic = false
+menusimpel = false
 baterai = {
 battery: "" || "Tidak Terdeteksi",
 isCharge: "" || false
 }
 offline = false
-publik = false
+publik = true
 waktuafk = 'Nothing'
 alasanafk = 'Nothing'
 NamaBot = settings.NamaBot
 NomorOwner = settings.NomorOwner
 NamaOwner = settings.NamaOwner
-Qrovo = settings.Qrovo
-Qrgopy = settings.Qrgopay
-Qrdana = settings.Qrdana
-Nogpy = 085888258313
-Noovo = 085888258313 
-Nodana = 085888258313
 multi = true
 nopref = false
 
 // APIKEY
 HunterApi = settings.HunterApi
+YuzApi = 'Yuzzu'
 
 const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
 
@@ -252,6 +211,9 @@ try {
 		const type = Object.keys(mek.message)[0]
 		const { text, extendedText, contact, location, liveLocation, image, video, sticker, document, audio } = MessageType
 		const time = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
+		const timeWib = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
+		const timeWita = moment().tz('Asia/Makassar').format('DD/MM HH:mm:ss')
+        const timeWit = moment().tz('Asia/Jayapura').format('DD/MM HH:mm:ss')
 		const cmd = (type === 'conversation' && mek.message.conversation) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text ? mek.message.extendedTextMessage.text : (type == 'stickerMessage') && (getCmd(mek.message.stickerMessage.fileSha256.toString('hex')) !== null && getCmd(mek.message.stickerMessage.fileSha256.toString('base64')) !== undefined) ? getCmd(mek.message.stickerMessage.fileSha256.toString('base64')) : "".slice(1).trim().split(/ +/).shift().toLowerCase()
 		denz.on("CB:action,,battery", json => {
 	    const battery = json[2][0][1].value
@@ -304,8 +266,8 @@ try {
 		const isGroup = from.endsWith('@g.us')
 		const sender = mek.key.fromMe ? denz.user.jid : isGroup ? mek.participant : mek.key.remoteJid
 		const senderNumber = sender.split("@")[0] 
-		const conts = mek.key.fromMe ? denz.user.jid : denz.contacts[sender] || { notify: jid.replace(/@.+/, '') }
-        const pushname = mek.key.fromMe ? denz.user.name : conts.notify || conts.vname || conts.name || '-'
+		const conts = mek.key.fromMe ? denz.user.jid : denz.contacts[mek.sender]
+        const pushname = mek.key.fromMe ? denz.user.name : !conts ? '-' : conts.notify || conts.vname || conts.name || '-'   
 		const totalchat = await denz.chats.all()
 		const groupMetadata = isGroup ? await denz.groupMetadata(from) : ''
 		const groupName = isGroup ? groupMetadata.subject : ''
@@ -322,16 +284,17 @@ try {
 		const isAuto = isGroup ? autosticker.includes(from) : false
 		const isMuted = isGroup ? mute.includes(from) : false
 		const isBotGroupAdmins = groupAdmins.includes(botNumber) || false
+		const isButton = (type == 'buttonsResponseMessage') ? mek.message.buttonsResponseMessage.selectedDisplayText : ''
 		const isUrl = (url) => {
 		return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%.+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%+.~#?&/=]*)/, 'gi'))
 		}
 		if (antibot === true) return
 		const katalog = (teks) => {
-             res = denz.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 321, "message": teks, "footerText": "*_Lolita Bot_*", "thumbnail": ofrply, "surface": 'CATALOG' }}, {quoted:ftrol})
+             res = denz.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 321, "message": teks, "footerText": "*_©Trito_*", "thumbnail": ofrply, "surface": 'CATALOG' }}, {quoted:ftrol})
              denz.relayWAMessage(res)
         }
         const grupinv = (teks) => {
-        	grup = denz.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/Dgt6JhzTvlmEor8Zz23fHx', "groupName": `${NamaBot}`, "footerText": "*_Lolita Bot_*", "jpegThumbnail": ofrply, "caption": teks}}, {quoted:finv})
+        	grup = denz.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/Dgt6JhzTvlmEor8Zz23fHx', "groupName": `${NamaBot}`, "footerText": "*_©Trito_*", "jpegThumbnail": ofrply, "caption": teks}}, {quoted:finv})
             denz.relayWAMessage(grup)
         }
 		idttt = []
@@ -359,30 +322,30 @@ try {
 			var ase = new Date();
                         var jamss = ase.getHours();
                          switch(jamss){
-                case 0: jamss = "Midnight"; break;
-                case 1: jamss = "Midnight"; break;
-                case 2: jamss = "Midnight"; break;
-                case 3: jamss = "Midnight"; break;
-                case 4: jamss = "Midnight"; break;
-                case 5: jamss = "Dawn"; break;
-                case 6: jamss = "Morning"; break;
-                case 7: jamss = "Morning"; break;
-                case 8: jamss = "Morning"; break;
-                case 9: jamss = "Morning"; break;
-                case 10: jamss = "Morning"; break;
-                case 11: jamss = "Afternoon"; break;
-                case 12: jamss = "Zuhur"; break;
-                case 13: jamss = "Afternoon"; break;
-                case 14: jamss = "Afternoon"; break;
-                case 15: jamss = "Asr"; break;
-                case 16: jamss = "Afternoon"; break;
-                case 17: jamss = "Evening"; break;
-                case 18: jamss = "Maghrib"; break;
-                case 19: jamss = "Isha"; break;
-                case 20: jamss = "Night"; break;
-                case 21: jamss = "Night"; break;
-                case 22: jamss = "Midnight"; break;
-                case 23: jamss = "Midnight"; break;
+                case 0: jamss = "Midnight 🌚"; break;
+                case 1: jamss = "Midnight 🌚"; break;
+                case 2: jamss = "Midnight 🌚"; break;
+                case 3: jamss = "Midnight 🌔"; break;
+                case 4: jamss = "Midnight 🌔"; break;
+                case 5: jamss = "Dawn 🌄"; break;
+                case 6: jamss = "Morning 🌄"; break;
+                case 7: jamss = "Morning 🌄"; break;
+                case 8: jamss = "Morning ☀️"; break;
+                case 9: jamss = "Morning ☀️"; break;
+                case 10: jamss = "Morning ☀️"; break;
+                case 11: jamss = "Afternoon 🌞"; break;
+                case 12: jamss = "Zuhur 🌞"; break;
+                case 13: jamss = "Afternoon 🌞"; break;
+                case 14: jamss = "Afternoon 🌞"; break;
+                case 15: jamss = "Asr 🌞"; break;
+                case 16: jamss = "Afternoon ☀️"; break;
+                case 17: jamss = "Evening 🌄"; break;
+                case 18: jamss = "Maghrib 🌄"; break;
+                case 19: jamss = "Isha 🌙"; break;
+                case 20: jamss = "Night 🌙"; break;
+                case 21: jamss = "Night 🌙"; break;
+                case 22: jamss = "Midnight 🌙"; break;
+                case 23: jamss = "Midnight 🌚"; break;
             }
             var tampilUcapan = "" + jamss;
             const jmn = moment.tz('Asia/Jakarta').format('HH:mm:ss')
@@ -630,7 +593,7 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
             if (isAfk(mek.key.remoteJid)) return
             addafk(mek.key.remoteJid)
 			heheh = ms(Date.now() - waktuafk)
-		  sendButMessage(from, `Hai ${pushname}, Maaf sepertinya saat ini ${NamaOwner} sedang Offline\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik\n\nSilahkan hubungi lagi setelah Online`, "*_Lolita Bot_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
+		  sendButMessage(from, `Hai ${pushname}, Maaf sepertinya saat ini ${NamaOwner} sedang Offline\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik\n\nSilahkan hubungi lagi setelah Online`, "*_©Trito_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
 			}
 		}
 		if (mek.key.remoteJid.endsWith('@g.us') && offline) {
@@ -643,7 +606,7 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
                         if (isAfk(mek.key.remoteJid)) return
                         addafk(mek.key.remoteJid)
 						heheh = ms(Date.now() - waktuafk)
-			       sendButMessage(from, `Hai ${pushname}, Maaf sepertinya saat ini ${NamaOwner} sedang Offline\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik\n\nSilahkan hubungi lagi setelah Online`, "*_Lolita Bot_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
+			       sendButMessage(from, `Hai ${pushname}, Maaf sepertinya saat ini ${NamaOwner} sedang Offline\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik\n\nSilahkan hubungi lagi setelah Online`, "*_©Trito_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
 					}
 				}
 						}
@@ -707,7 +670,10 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 	        denz.sendMessage(from, { displayname: nama, vcard: vcard}, MessageType.contact, {contextInfo: {"mentionedJid": ane}})
             }
 		const reply = (teks) => {
-			denz.sendMessage(from, teks, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `${NamaBot}`,body:"",previewType:"PHOTO",thumbnail:ofrply,sourceUrl:`https://youtube.com/channel/UCqkpkST3ElnoHNAwEcuRX3g`}}})
+			denz.sendMessage(from, teks, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `${jmn} - ${week} ${weton} - ${calender}`,body:"",previewType:"PHOTO",thumbnail:ofrply,sourceUrl:`https://wa.me/6285866295942?text=Assalamualaikum`}}})
+		}
+		const reply2 = (teks) => {
+			denz.sendMessage(from, teks, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true}})
 		}
 		const simir = (teks) => {
 			denz.sendMessage(from, teks, text, { quoted:ftrol })
@@ -715,17 +681,8 @@ denz.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 		const math = (teks) => {
 				return Math.floor(teks)
 		}
-		const ovo = (teks) => {
-				denz.sendMessage(from, teks, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "📲 QRCODE OVO 📲",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"OV1876"}}})
-		}
-		const dana = (teks) => {
-				denz.sendMessage(from, teks, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "📲 QRCODE DANA 📲",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"DNA187736"}}})
-		}
-		const gopay = (teks) => {
-				denz.sendMessage(from, teks, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "📲 QRCODE GOPAY 📲",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"GPY18ui876"}}})
-		}
 		const sendMess = (hehe, teks) => {
-			denz.sendMessage(hehe, teks, text, { quoted: tok, contextInfo: { forwardingScore: 508, isForwarded: true}})
+			denz.sendMessage(hehe, teks, text, { quoted: ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
 		}
 		const mentions = (teks, memberr, id) => {
 			(id == null || id == undefined || id == false) ? denz.sendMessage(from, teks.trim(), extendedText, { contextInfo: { "mentionedJid": memberr } }) : denz.sendMessage(from, teks.trim(), extendedText, { quoted: mek, contextInfo: { "mentionedJid": memberr } })
@@ -801,27 +758,60 @@ return reply(parse)
                 }
                 return `${bits.toFixed(places[unit])} ${units[unit]}bps`;
             } 
-           if (budo.startsWith(`>`)){
-           	if (!isOwner) return
-				const sep = budo.split("\n")
-                let exc = budo.replace(sep[0]+"\n", "")
-                const print = function(budo){
-                    denz.sendMessage(from, util.format(budo))
-                }
-                console.log(exc)
-                eval("(async () => {try{"+exc+"}catch(e){denz.sendMessage(from,  e.toString())}})()")
-			}
-			if (budo.startsWith(`$`)){
-				if (!isOwner) return
-				const sep = budo.split("\n")
-                let exc = budo.replace(sep[0]+"\n", "")
-                exec(exc, (err, stdout) => {
-					if (err) return denz.sendMessage(from, `root @dcode-denpa:~ ${err}`, text, { quoted: mek })
-					if (stdout) {
-						denz.sendMessage(from, stdout, text)
-					}
-				})
-			}
+            
+if (budy.startsWith('>')){
+if (!isOwner)return reply(`Perintah ini tidak bisa Di lakukan oleh Jadibot sementara`)
+console.log(color('[EVAL]'), color(moment(mek.messageTimestamp * 1000).format('DD/MM/YY HH:mm:ss'), 'yellow'), color(`Eval V1 brooo`))
+ras = budy.slice(1)
+function _(rem) {
+ren = JSON.stringify(rem,null,2)
+pes = util.format(ren)
+reply(pes)
+}
+try{c
+reply(require('util').format(eval(`(async () => { ${ras} })()`)))
+} catch(err) {
+e = String(err)
+reply(e)
+}
+}
+if (budy.startsWith('$')){
+if (!mek.key.fromMe && !isOwner) return
+qur = budy.slice(2)
+exec(qur, (err, stdout) => {
+if (err) return reply(`${err}`)
+if (stdout) {
+reply(stdout)
+}
+})
+}
+if (budy.startsWith('x')){
+if (!mek.key.fromMe && !isOwner) return
+try {
+return denz.sendMessage(from, JSON.stringify(eval(budy.slice(2)),null,'\t'),text, {quoted: mek})
+} catch(err) {
+e = String(err)
+reply(e)
+}
+}
+if (budy.startsWith('=>')){
+if (!isOwner && !mek.key.fromMe) return
+var konsol = budy.slice(3)
+Return = (sul) => {
+var sat = JSON.stringify(sul, null, 2)
+bang = util.format(sat)
+if (sat == undefined){
+bang = util.format(sul)
+}
+return reply(bang)
+}
+try {
+reply(util.format(eval(`;(async () => { ${konsol} })()`)))
+console.log('\x1b[1;37m>', '[', '\x1b[1;32mEXEC\x1b[1;37m', ']', time, color(">", "green"), 'from', color(sender.split('@')[0]), 'args :', color(args.length))
+} catch(e){
+reply(String(e))
+}
+}
 			// AUTO
 			for (let anji of setik){
 				if (budy === anji){
@@ -878,7 +868,7 @@ await denz.modifyChat(m.chat, 'delete', {
 }
 if (!isGroup && !isCmd && !command && !mek.key.fromMe && !autorespon) {
 numd = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-	simi = await fetchJson(`https://api.simsimi.net/v1/?lang=${numd.data.country_code}&cf=false&text=${cmd}`)
+	simi = await fetchJson(`https://api.simsimi.net/v2/?text=${cmd}&lc=${numd.data.country_code}`)
                      sami = simi.success
                         denz.sendMessage(from, `_${sami}_`, text, {thumbnail: ofrply, sendEphemeral: true, quoted:mek, contextInfo : {forwardingScore: 508, isForwarded: true}})
                       }
@@ -944,1047 +934,362 @@ denz.updatePresence(from, Presence.recording)
         reply(su)
 				}
         switch (command) {
-        case 'menu':
-        case 'help':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
+case 'menu':
+case 'help':
+if(menusimpel == false){
+stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `🌹𝐇𝐄𝐋𝐋𝐎𝐖𝐎𝐑𝐋𝐃🌹
+fill =`Hai Kak ${pushname}, ${tampilUcapan}
+Silahkan Pilih Untuk Menampilkan Menu
 
-_${NamaBot}_
-_Hay Kak ${pushname} 👋_
-  
-「 𝑪𝑨𝑳𝑬𝑵𝑫𝑨𝑹 」
+Jika Button Tidak Muncul Ketik .allmenu`
+menu =`L O L I T A ボット`
+gbutsan = [
+{buttonId:`allmenu`,buttonText:{displayText:'📑SHOW MENU'},type:1},
+{buttonId:`owner`,buttonText:{displayText:'👑OWNER'},type:1},
+{buttonId:`script`,buttonText:{displayText:'🔖SCRIPT'},type:1}
+]
+mhan = await denz.prepareMessage(from, ofrply, image, {thumbnail: ofrply})
+const buttonMessages = {
+imageMessage: mhan.message.imageMessage,
+contentText: `${fill}`,
+footerText: `${menu}`,
+buttons: gbutsan,
+headerType: 4
+}
+denz.sendMessage(from, buttonMessages, MessageType.buttonsMessage, {
+        thumbnail: fs.readFileSync('./denz.jpg'),
+        "contextInfo": {
+            mentionedJid: [otod]},
+        caption: 'Tes',
+            quoted: ftok})
+}
+else if(menusimpel = true){
+   stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
+				stst = stst.status == 401 ? '' : stst.status
+			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
+data = fs.readFileSync('./lib/logo.js');
+jsonData = JSON.parse(data);
+randIndex = Math.floor(Math.random() * jsonData.length);
+randKey = jsonData[randIndex];
+gambar = await getBuffer(randKey.result)
+   menu = `*Halo ${pushname}*
+*Kalo buttonnya gak ada*
+*ketik #allmenu*
 
-*🐥 Day :* ${week}
-*🐥 Date :* ${calender}
-        
-「 𝒀𝑶𝑼𝑹 𝑰𝑵𝑭𝑶𝑹𝑴𝑨𝑻𝑰𝑶𝑵 」
+BOT-INFO
+- Owner : @${otod.split('@')[0]}
+- Battery : ${baterai.battery}
+- Mode : ${publik ? 'Public' : 'Self'}
+- Prefix : ${multi ? 'Multi Prefix' : 'No Prefix'}
+- Total Hit : ${cmhit.length}
 
-*🐥 Username :* ${pushname}
-*🐥 Bio Info:*  ${stst}
-*🐥 Status :* ${isOwner ? 'Owner' : 'User'}
-*🐥 Nomor :* @${stod.split('@')[0]}
-*🐥 Info Nomor :* ${num.data.country_code} - ${num.data.carrier.type} - ${num.data.carrier.name}
+TIME-INFO
+- ${tampilUcapan} ${pushname}
+- Wib : ${timeWib}
+- Wita : ${timeWita}
+- Wit : ${timeWit}  
+- Hari : ${week} ${weton}
+- Tanggal : ${calender}`
+sendButLocation(from, `${menu}`, "L O L I T A ボット", {jpegThumbnail:gambar,name:""}, [
+{buttonId:`allmenu`,buttonText:{displayText:'📑SHOW MENU'},type:1},
+{buttonId:`owner`,buttonText:{displayText:'👑OWNER'},type:1},
+{buttonId:`script`,buttonText:{displayText:'🔖SCRIPT'},type:1}
+], {contextInfo: { mentionedJid: [otod]}})
+}
+           	break
+case 'allmenu':
+denz.sendMessage(from, 'Wait sedang menampilkan menu', text, {quoted: ftok})
+stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
+				stst = stst.status == 401 ? '' : stst.status
+			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
+data = fs.readFileSync('./lib/logo.js');
+jsonData = JSON.parse(data);
+randIndex = Math.floor(Math.random() * jsonData.length);
+randKey = jsonData[randIndex];
+gambar = await getBuffer(randKey.result)
+menu =`╭─❒ 「 INFO 」 ❒──❒
+│ ⬡ Owner : @${otod.split('@')[0]}
+│ ⬡ Battery : ${baterai.battery}
+│ ⬡ Mode : ${publik ? 'Public' : 'Self'}
+│ ⬡ Prefix : ${multi ? 'Multi Prefix' : 'No Prefix'}
+│ ⬡ Total Hit : ${cmhit.length}
+└❏
 
-「 𝑩𝑶𝑻 𝑰𝑵𝑭𝑶𝑹𝑴𝑨𝑻𝑰𝑶𝑵 」
+╭─❒ 「 TIME 」 ❒──❒
+│ ⬡ Wib : ${timeWib}
+│ ⬡ Wita : ${timeWita}
+│ ⬡ Wit : ${timeWit}  
+│ ⬡ Hari : ${week} ${weton}
+│ ⬡ Tanggal : ${calender}
+└❏
 
-*🐥 Nama Bot :* ${NamaBot}
-*🐥 Nama Owner :* ${NamaOwner}
-*🐥 Nomor Owner :* @${otod.split('@')[0]}`
-sendButLocation(from, `🌹𝐇𝐄𝐋𝐋𝐎𝐖𝐎𝐑𝐋𝐃🌹\n\n_${NamaBot}_\n_Hay Kak ${pushname} 👋_\n\n「 𝑪𝑨𝑳𝑬𝑵𝑫𝑨𝑹 」\n\n*🐥 Day :* ${week}\n*🐥 Date :* ${calender}\n\n「 𝒀𝑶𝑼𝑹 𝑰𝑵𝑭𝑶𝑹𝑴𝑨𝑻𝑰𝑶𝑵 」\n\n*🐥 Username :* ${pushname}\n*🐥 Bio Info :*  ${stst}\n*🐥 Status :* ${isOwner ? 'Owner' : 'User'}\n*🐥 Nomor :* @${stod.split('@')[0]}\n*🐥 Info Nomor :* ${num.data.country_code} - ${num.data.carrier.type} - ${num.data.carrier.name}\n\n「 𝑩𝑶𝑻 𝑰𝑵𝑭𝑶𝑹𝑴𝑨𝑻𝑰𝑶𝑵 」\n\n*🐥 Nama Bot :* ${NamaBot}\n*🐥 Nama Owner :* ${NamaOwner}\n*🐥 Nomor Owner :* @${otod.split('@')[0]}`, "「 𝐋𝐈𝐒𝐓 𝐌𝐄𝐍𝐔 」\n\n🔖 *OtherMenu*\n🔖 *OwnerMenu*\n🔖 *GroupMenu*\n🔖 *DownloadMenu*\n\n*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}bm`,buttonText:{displayText:'📋'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+╭─❒ OWNER
+├ ${prefix}stopjadibot
+├ ${prefix}autorespon [ _on/off_ ]
+├ ${prefix}bc [ _teks/reply gif/image/video with caption_ ]
+├ ${prefix}tobc [ _reply sticker/audio with caption_ ]
+├ ${prefix}return [ _javascript_ ]
+├ ${prefix}clearall
+├ ${prefix}delchat
+├ ${prefix}mute
+├ ${prefix}unmute
+├ ${prefix}mode [ _publik/self_ ]
+├ ${prefix}setmenu [ _1/2_ ]
+├ ${prefix}spam [ _teks|jumlah_ ]
+├ ${prefix}demoteall
+├ ${prefix}promoteall
+├ ${prefix}addcmd [ _teks reply stc_ ]
+├ ${prefix}delcmd [ _reply stc_ ]
+├ ${prefix}listcmd
+├ ${prefix}spamsw [ _teks|jumlah_ ]
+├ ${prefix}upswteks [ _teks_ ]
+├ ${prefix}upswlokasi [ _teks_ ]
+├ ${prefix}upswaudio [ _reply audio_ ]
+├ ${prefix}upswvoice [ _reply audio_ ]
+├ ${prefix}upswsticker [ _reply sticker_ ]
+├ ${prefix}upswimage [ _reply image with caption_ ]
+├ ${prefix}upswgif [ _reply gif with caption_ ]
+├ ${prefix}upswvideo [ _reply video with caption_ ]
+├ ${prefix}shutdown
+├ ${prefix}offline [ _alasan_ ]
+├ ${prefix}online
+├ ${prefix}exif [ _nama|author_ ]
+├ ${prefix}setprofile [ _reply image_ ]
+├ ${prefix}setname [ _teks_ ]
+├ ${prefix}setprefix [ _multi/nopref/prefix_ ]
+├ ${prefix}setbio [ _teks_ ]
+├ ${prefix}bug [ _jumlah_ ]
+├ ${prefix}bugpc2 [ _jumlah_ ]
+├ ${prefix}bugtroli2 [ _jumlah_ ]
+├ ${prefix}bugpc
+├ ${prefix}bugcombine
+├ ${prefix}bugtroli
+├ ${prefix}buglokasi
+├ ${prefix}bughole
+├ ${prefix}leave
+├ ${prefix}restart
+├ ${prefix}join [ _link group_ ]
+├ ${prefix}addrespon [ _tanya|jawab_ ]
+├ ${prefix}delrespon [ _nama_ ]
+├ ${prefix}q [ _reply message_ ]
+├ ${prefix}baileys [ _reply message_ ]
+└─────────────────❒
+
+╭─❒ DOWNLOAD
+├ ${prefix}infogempa
+├ ${prefix}herolist
+├ ${prefix}herodetail [ _hero_ ]
+├ ${prefix}google [ _search_ ]
+├ ${prefix}gimage [ _search_ ]
+├ ${prefix}wiki [ _search_ ]
+├ ${prefix}mediafire [ _link_ ]
+├ ${prefix}ytsearch [ _judul_ ]
+├ ${prefix}ytmp4 [ _link yt_ ]
+├ ${prefix}ytmp3 [ _link yt_ ]
+├ ${prefix}play [ _judul lagu_ ]
+├ ${prefix}video [ _judul video_ ]
+├ ${prefix}tinyurl [ _link_ ]
+├ ${prefix}fetch [ _link_ ]
+├ ${prefix}igdl [ _link_ ]
+├ ${prefix}tiktokdl [ _link_ ]
+├ ${prefix}pinterest [ _search_ ]
+├ ${prefix}lirik [ _judul_ ]
+├ ${prefix}tourl [ _reply image/video_ ]
+├ ${prefix}resepmasakan [ _judul_ ]
+├ ${prefix}artimimpi [ _teks_ ]
+├ ${prefix}bilangangka [ _angka_ ]
+├ ${prefix}kalkulator [ _angka_ ]
+├ ${prefix}fancytext [ _teks_ ]
+├ ${prefix}githubstalk [ _username_ ]
+├ ${prefix}translate [ _kodebhs|teks_ ]
+├ ${prefix}ss [ _link_ ]
+└─────────────────❒
+
+╭─❒ MAKER
+├ ${prefix}foliokiri [ _teks_ ]
+├ ${prefix}foliokanan [ _teks_ ]
+├ ${prefix}nuliskanan [ _teks_ ]
+├ ${prefix}nuliskiri [ _teks_ ]
+├ ${prefix}matrix [ _teks_ ]
+├ ${prefix}googletxt [ _teks_ ]
+├ ${prefix}spiderman [ _teks_ ]
+├ ${prefix}express [ _teks_ ]
+├ ${prefix}dance [ _teks_ ]
+├ ${prefix}blackbird [ _teks_ ]
+├ ${prefix}halloween [ _teks_ ]
+├ ${prefix}vampire [ _teks_ ]
+├ ${prefix}codetxt [ _teks_ ]
+├ ${prefix}text3d [ _teks_ ]
+├ ${prefix}warrior [ _teks_ ]
+├ ${prefix}maker2d2 [ _teks_ ]
+├ ${prefix}maker2d3 [ _teks_ ]
+├ ${prefix}maker2d4 [ _teks_ ]
+├ ${prefix}maker3d [ _teks_ ]
+├ ${prefix}maker3d2 [ _teks_ ]
+├ ${prefix}maker3d3 [ _teks_ ]
+├ ${prefix}maker3d4 [ _teks_ ]
+├ ${prefix}transformer [ _teks_ ]
+├ ${prefix}googletxt [ _teks|teks|teks_ ]
+├ ${prefix}battlefield [ _teks|teks_ ]
+├ ${prefix}coffeecup [ _teks_ ]
+├ ${prefix}coffeecup2 [ _teks_ ]
+├ ${prefix}neon [ _teks_ ]
+├ ${prefix}glow [ _teks_ ]
+├ ${prefix}summer [ _teks_ ]
+├ ${prefix}flower [ _teks_ ]
+├ ${prefix}burn [ _teks_ ]
+├ ${prefix}quote [ _teks_ ]
+├ ${prefix}wooden [ _teks_ ]
+├ ${prefix}golden [ _teks_ ]
+└─────────────────❒
+
+╭─❒ GROUP
+├ ${prefix}getpict [ _@tag_ ]
+├ ${prefix}getname [ _reply target_ ]
+├ ${prefix}getbio [ _reply target_ ]
+├ ${prefix}promote [ _@tag_ ]
+├ ${prefix}demote [ _@tag_ ]
+├ ${prefix}antilink [ _1/0_ ]
+├ ${prefix}creategrup [ _nama|@tag_ ]
+├ ${prefix}tictactoe [ _@tag_ ]
+├ ${prefix}delttt
+├ ${prefix}getpp
+├ ${prefix}kick [ _@tag_ ]
+├ ${prefix}add [ _nomor_ ]
+├ ${prefix}getdeskgc
+├ ${prefix}sider [ _reply pesan bot_ ]
+├ ${prefix}hacked [ _teks_ ]
+├ ${prefix}setnamegc [ _teks_ ]
+├ ${prefix}setdeskgc [ _teks_ ]
+├ ${prefix}fitnah [ _@tag|teks1|teks2_ ]
+├ ${prefix}kontak [ _@tag|nama_ ]
+├ ${prefix}kontag [ _@tag|nama_ ]
+├ ${prefix}opengc
+├ ${prefix}closegc
+├ ${prefix}resetlinkgc
+├ ${prefix}linkgrup
+├ ${prefix}hidetag [ _teks_ ]
+├ ${prefix}sticktag [ _nama sticker_ ]
+├ ${prefix}totag [ _reply media_ ]
+├ ${prefix}caripesan [ _teks|jumlah_ ]
+└─────────────────❒
+
+╭─❒ JADI BOT
+├ ${prefix}jadibot
+├ ${prefix}stopjadibot
+└─────────────────❒
+
+╭─❒ STORAGE
+├ ${prefix}listimage
+├ ${prefix}liststicker
+├ ${prefix}listvn
+├ ${prefix}listgrup
+├ ${prefix}addsticker [ _nama_ ]
+├ ${prefix}delsticker [ _nama_ ]
+├ ${prefix}addvn [ _nama_ ]
+├ ${prefix}delvn [ _nama_ ]
+├ ${prefix}addimage [ _nama_ ]
+├ ${prefix}delimage [ _nama_ ]
+└─────────────────❒
+
+╭─❒ CONVERT
+├ ${prefix}tomp3 [ _reply video_ ]
+├ ${prefix}tomp4 [ _reply sticker gif_ ]
+├ ${prefix}robot [ _reply audio_ ]
+├ ${prefix}balik [ _reply audio_ ]
+├ ${prefix}bass [ _reply audio_ ]
+├ ${prefix}gemuk [ _reply audio_ ]
+├ ${prefix}detikvn [ _reply audio caption angka_ ]
+├ ${prefix}detikvideo [ _reply video caption angka_ ]
+└─────────────────❒
+
+╭─❒ TOOLS
+├ ${prefix}sticker
+├ ${prefix}stickerwm [ _nama|author_ ]
+├ ${prefix}takestick [ _nama|author_ ]
+├ ${prefix}colong [ _reply sticker_ ]
+├ ${prefix}semoji [ _emoji_ ]
+├ ${prefix}attp [ _teks_ ]
+├ ${prefix}toimg
+└─────────────────❒
+
+╭─❒ FUN
+├ ${prefix}meme
+├ ${prefix}slots
+├ ${prefix}tictactoe
+├ ${prefix}rate [ _teks_ ]
+├ ${prefix}kapankah [ _teks_ ]
+├ ${prefix}apakah [ _teks_ ]
+├ ${prefix}bisakah [ _teks_ ]
+├ ${prefix}suit [ _gunting/batu/kertas_ ]
+├ ${prefix}tag [ _nomor_ ]
+├ ${prefix}tagme
+├ ${prefix}tts [ _kodebhs teks_ ]
+├ ${prefix}readmore [ _teks1|teks2_ ]
+├ ${prefix}fitnahpc [ _nomor|teks1|teks2_ ]
+├ ${prefix}chat [ _nomor|teks_ ]
+├ ${prefix}fdeface [ _replyimg link|teks1|teks2_ ]
+├ ${prefix}getcaption [ _reply message_ ]
+├ ${prefix}pantun
+├ ${prefix}tospam [ _reply audio/sticker/image|jumlah_ ]
+├ ${prefix}sharelock [ _teks1|teks2_ ]
+└─────────────────❒`
+sendButLocation(from, `${menu}`, "L O L I T A ボット", {jpegThumbnail:gambar,name:""}, [{buttonId:`owner`,buttonText:{displayText:'👑OWNER'},type:1},{buttonId:`script`,buttonText:{displayText:'📒SCRIPT'},type:1}], {contextInfo: { mentionedJid: [otod]}})
 break
-case 'bm':
+case 'command':
+ stod = `${sender}`
  listMsg = {
- buttonText: 'KLIK DISINI',
- footerText: '*Support Owner Dengan Donasi*',
- description: `*Hai ${pushname} 🌹*`,
+ buttonText: 'LIST MENU',
+ footerText: '*_©Trito_*',
+ description: `Hai kak @${stod.split('@')[0]}, Silahkan pilih menu disini`,
  sections: [
                      {
                       "title": `${jmn} - ${week} ${weton} - ${calender}`,
  rows: [
                           {
-                              "title": "BOTMENU 📋 \n\n _Lolita Bot_",
+                              "title": "Script",
                               "rowId": ""
                            },
                            {
-                              "title": "STORE 🛒\n\n _Lolita Bot_",
-                              "rowId": ""
-                              },
-                           {
-                              "title": "SEWA 🏷️\n\n _Lolita Bot_",
+                              "title": "Speed",
                               "rowId": ""
                            },
                            {
-                              "title": "DONASI ♨️\n\n _Lolita Bot_",
+                              "title": "Status",
                               "rowId": ""
                            },
                            {
-                              "title": "OWNER 👨‍💻 \n\n _Lolita Bot_",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
- }
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'wait':
-denz.sendMessage(from, `*HAI ${pushname} Daripada Nunggu Mending Subscribe Dulu*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "SUPPORT Owner Dengan Donasi",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://m.youtube.com/channel/UCqkpkST3ElnoHNAwEcuRX3g"}}})
-break
-case 'success':
-denz.sendMessage(from, `*Success Jangn Lupa Subscribe*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "SUPPORT Owner Dengan Donasi",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://m.youtube.com/channel/UCqkpkST3ElnoHNAwEcuRX3g"}}})
-break
-case 'qr':
-denz.sendMessage(from, `TEST`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "QR GOPAY",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://l.top4top.io/p_2067qc45j0.jpg"}}})
-break
-////------------------------oktaaaaa
-case 'to0398jp':
-        case 'store':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `┌───「 \`\`\`${NamaBot}\`\`\` 」
-│
-├ _Creator : @${dtod.split('@')[0]}_
-├ _Battery : ${baterai.battery}_
-├ _Mode : ${publik ? 'Public' : 'Self'}_
-├ _Total Hit : ${cmhit.length}_
-├ _Prefix : ${multi ? 'Multi Prefix' : 'No Prefix'}_
-│
-├───「 \`\`\`INFO BOT\`\`\` 」
-│
-├ _Nama Bot : ${NamaBot}_
-├ _Nama Owner : ${NamaOwner}_
-├ _Nomor Owner : @${otod.split('@')[0]}_
-├ _Auto Composing : ${settings.autocomposing}_
-├ _Auto Recording : ${settings.autorecording}_
-│
-├───「 \`\`\`INFO USER\`\`\` 」
-│
-├ _Status : ${isOwner ? 'Owner' : 'User'}_
-├ _Nama : ${pushname}_
-├ _Bio : ${stst}_
-├ _Nomor : @${stod.split('@')[0]}_
-├ _Info Nomor : ${num.data.country_code} - ${num.data.carrier.type} - ${num.data.carrier.name}_
-│
-└───「 \`\`\`${NamaBot}\`\`\` 」`
-sendButLocation(from, `*_Hay ${pushname}_ 🌹*\n\nBerikut list menu yang tersedia di ${NamaBot}`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}listdm`,buttonText:{displayText:'📋 LIST DIAMOND'},type:1},{buttonId:`${prefix}member`,buttonText:{displayText:'💳 MEMBERSHIP'},type:1},{buttonId:`${prefix}info`,buttonText:{displayText:'❗ INFO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case 'info':
-        case 'pwoww':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `┌───「 \`\`\`${NamaBot}\`\`\` 」
-│
-├ _Creator : @${dtod.split('@')[0]}_
-├ _Battery : ${baterai.battery}_
-├ _Mode : ${publik ? 'Public' : 'Self'}_
-├ _Total Hit : ${cmhit.length}_
-├ _Prefix : ${multi ? 'Multi Prefix' : 'No Prefix'}_
-│
-├───「 \`\`\`INFO BOT\`\`\` 」
-│
-├ _Nama Bot : ${NamaBot}_
-├ _Nama Owner : ${NamaOwner}_
-├ _Nomor Owner : @${otod.split('@')[0]}_
-├ _Auto Composing : ${settings.autocomposing}_
-├ _Auto Recording : ${settings.autorecording}_
-│
-├───「 \`\`\`INFO USER\`\`\` 」
-│
-├ _Status : ${isOwner ? 'Owner' : 'User'}_
-├ _Nama : ${pushname}_
-├ _Bio : ${stst}_
-├ _Nomor : @${stod.split('@')[0]}_
-├ _Info Nomor : ${num.data.country_code} - ${num.data.carrier.type} - ${num.data.carrier.name}_
-│
-└───「 \`\`\`${NamaBot}\`\`\` 」`
-sendButLocation(from, `*❗ INFO*\n\nWaktu Buka Jam 09:00 - 22:00`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gw1`,buttonText:{displayText:'👥 GRUB'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-//sewa bot
-case 'sewa':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hai ${pushname} 🌹_* \n\nyakin nih mau sewa bot ? 🤔 Boong auto banned >_<`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}sewa1`,buttonText:{displayText:'💞Ya'},type:1},{buttonId:`${prefix}gk`,buttonText:{displayText:'👀Tidak'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case 'gc':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nSilahkan pilih ingin buka / tutup grub`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}opengc`,buttonText:{displayText:'BUKA'},type:1},{buttonId:`${prefix}closegc`,buttonText:{displayText:'TUTUP'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case 'sewa1':
- listMsg = {
- buttonText: 'KLIK DISINI',
- footerText: '*_Lolita Bot_*',
- description: `*LIST SEWA BOT*\n _Hay @${stod.split('@')[0]}_ Ini adalah list sewa bot silahkan pilih`,
- sections: [
-                     {
-                      "title": `${jmn} - ${week} ${weton} - ${calender}`,
- rows: [
-                          {
-                              "title": "🕐sewa 1 minggu",
+                              "title": "Creator",
                               "rowId": ""
                            },
                            {
-                              "title": "🕑sewa 2 minggu",
+                              "title": "Jadibot",
                               "rowId": ""
                            },
                            {
-                              "title": "🕒sewa 3 minggu",
+                              "title": "Runtime",
                               "rowId": ""
                            },
                            {
-                              "title": "🕓sewa 1 bulan",
+                              "title": "OwnerMenu",
                               "rowId": ""
                            },
                            {
-                              "title": "🕔sewa 2 bulan",
+                              "title": "MakerMenu",
                               "rowId": ""
                            },
                            {
-                              "title": "👨‍💻",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case '🕐sewa':
-case '🕑sewa':
-case '🕒sewa':
-case '🕓sewa':
-case '🕔sewa':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `_*Hai ${pushname}🌹*_\n\nSilahkan pilih metode pembayaran`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}py`,buttonText:{displayText:'NOMOR 📱'},type:1},{buttonId:`${prefix}qrsewa`,buttonText:{displayText:'QR CODE 📱'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case 'py':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `_*Hai ${pushname}🌹*_\n\nSilahkan pilih metode pembayaran`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}o1`,buttonText:{displayText:'OVO 📱'},type:1},{buttonId:`${prefix}d1`,buttonText:{displayText:'GOPAY 📱'},type:1},{buttonId:`${prefix}d1`,buttonText:{displayText:'DANA 📱'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case 'qrsewa':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `_Hai ${pushname}🌹_\n\nSilahkan pilih metode pembayaran`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}qrg1`,buttonText:{displayText:'QR GOPAY 📱'},type:1},{buttonId:`${prefix}qro1`,buttonText:{displayText:'QR OVO 📱'},type:1},{buttonId:`${prefix}qrd1`,buttonText:{displayText:'QR DANA 📱'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case 'qro1':
-denz.sendMessage(from, `*[❗] OPEN SEWA BOT*
-╭───────────────
-│ *Harga Sewa MINGGUAN*
-│ 1 minggu : Rp 3.000 
-│ 2 minggu : Rp 5.000
-│ 3 minggu : Rp 10.000
-╰────────────────
-          │ *Harga Sewa BULANAN*
-          │1 Bulan : Rp. 15.000
-          │2 Bulan : Rp. 20.000
-          ╰───────────────
-╭───────────────
-│ *NOTE :*
-│BOT AKTIF 24 JAM
-╰────────────────
-
-*📌 MINAT?*
-_CHAT : wa.me/${otod.split('@')[0]}_
-
-*════〘 ${NamaBot} 〙════*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "QRCODE OVO",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"OV1876"}}})
-break
-case 'qrg1':
-denz.sendMessage(from, `*[❗] OPEN SEWA BOT*
-╭───────────────
-│ *Harga Sewa MINGGUAN*
-│ 1 minggu : Rp 3.000 
-│ 2 minggu : Rp 5.000
-│ 3 minggu : Rp 10.000
-╰────────────────
-          │ *Harga Sewa BULANAN*
-          │1 Bulan : Rp. 15.000
-          │2 Bulan : Rp. 20.000
-          ╰───────────────
-╭───────────────
-│ *NOTE :*
-│BOT AKTIF 24 JAM
-╰────────────────
-
-*📌 MINAT?*
-_CHAT : wa.me/${otod.split('@')[0]}_
-
-*════〘 ${NamaBot} 〙════*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "QRCODE GOPAY",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"GPY18ui876"}}})
-break
-case 'qrg1':
-denz.sendMessage(from, `*[❗] OPEN SEWA BOT*
-╭───────────────
-│ *Harga Sewa MINGGUAN*
-│ 1 minggu : Rp 3.000 
-│ 2 minggu : Rp 5.000
-│ 3 minggu : Rp 10.000
-╰────────────────
-          │ *Harga Sewa BULANAN*
-          │1 Bulan : Rp. 15.000
-          │2 Bulan : Rp. 20.000
-          ╰───────────────
-╭───────────────
-│ *NOTE :*
-│BOT AKTIF 24 JAM
-╰────────────────
-
-*📌 MINAT?*
-_CHAT : wa.me/${otod.split('@')[0]}_
-
-*════〘 ${NamaBot} 〙════*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "QRCODE DANA",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"DNA187736"}}})
-break
-case 'o1':
-menu = `*[❗] OPEN SEWA BOT*
-╭───────────────
-│ *Harga Sewa MINGGUAN*
-│ 1 minggu : Rp 3.000 
-│ 2 minggu : Rp 5.000
-│ 3 minggu : Rp 10.000
-╰────────────────
-          │ *Harga Sewa BULANAN*
-          │1 Bulan : Rp. 15.000
-          │2 Bulan : Rp. 20.000
-          ╰───────────────
-╭───────────────
-│ *NOTE :*
-│BOT AKTIF 24 JAM
-╰────────────────
-
-*📌 MINAT?*
-_CHAT : wa.me/${otod.split('@')[0]}_
-
-*════〘 ${NamaBot} 〙════*`
-katalog(menu)
-listMsg = {
- buttonText: 'NOMOR',
- footerText: '*_Lolita Bot_*',
- description: `*Hai ${pushname} 🎟️* \n\nsilahkan tekan "NOMOR" untuk melihat nomer ovo dan jangan lupa sertakan bukti pembayaran dan kirim ke OWNER`,
- sections: [
-                     {
-                      "title": `OVO : 0${Noovo}`,
- rows: [
-                           {
-                              "title": "👍 \n\nOk Bang",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'd1':
-menu = `*[❗] OPEN SEWA BOT*
-╭───────────────
-│ *Harga Sewa MINGGUAN*
-│ 1 minggu : Rp 3.000 
-│ 2 minggu : Rp 5.000
-│ 3 minggu : Rp 10.000
-╰────────────────
-          │ *Harga Sewa BULANAN*
-          │1 Bulan : Rp. 15.000
-          │2 Bulan : Rp. 20.000
-          ╰───────────────
-╭───────────────
-│ *NOTE :*
-│BOT AKTIF 24 JAM
-╰────────────────
-
-*📌 MINAT?*
-_CHAT : wa.me/${otod.split('@')[0]}_
-
-*════〘 ${NamaBot} 〙════*`
-katalog(menu)
-listMsg = {
- buttonText: 'NOMOR',
- footerText: '*_Lolita Bot_*',
- description: `*Hai ${pushname} 🎟️* \n\nsilahkan tekan "NOMOR" untuk melihat nomer dana dan jangan lupa sertakan bukti pembayaran dan kirim ke OWNER`,
- sections: [
-                     {
-                      "title": `DANA : 0${Nodana}`,
- rows: [
-                           {
-                              "title": "👍 \n\nOk Bang",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'g1':
-menu = `*[❗] OPEN SEWA BOT*
-╭───────────────
-│ *Harga Sewa MINGGUAN*
-│ 1 minggu : Rp 3.000 
-│ 2 minggu : Rp 5.000
-│ 3 minggu : Rp 10.000
-╰────────────────
-          │ *Harga Sewa BULANAN*
-          │1 Bulan : Rp. 15.000
-          │2 Bulan : Rp. 20.000
-          ╰───────────────
-╭───────────────
-│ *NOTE :*
-│BOT AKTIF 24 JAM
-╰────────────────
-
-*📌 MINAT?*
-_CHAT : wa.me/${otod.split('@')[0]}_
-
-*════〘 ${NamaBot} 〙════*`
-katalog(menu)
-listMsg = {
- buttonText: 'NOMOR',
- footerText: '*_Lolita Bot_*',
- description: `*Hai ${pushname} 🎟️* \n\nsilahkan tekan "NOMOR" untuk melihat nomer gopay dan jangan lupa sertakan bukti pembayaran dan kirim ke OWNER`,
- sections: [
-                     {
-                      "title": `GOPAY : 0${Nogpy}`,
- rows: [
-                           {
-                              "title": "👍 \n\nOk Bang",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case '👍':
-listMsg = {
- buttonText: 'OWNER 👨‍💻',
- footerText: '*_Lolita Bot_*',
- description: `*Hai ${pushname}* \n\nsilahkan tekan "OWNER" untuk menuju ke nomer owner`,
- sections: [
-                     {
-                      "title": `GOPAY : 0${Nogpy}`,
- rows: [
-                           {
-                              "title": "👨‍💻",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'gk':
-listMsg = {
- buttonText: 'MULAI',
- footerText: '*_Lolita Bot_*',
- description: `Emm y udah lah mending main game aja`,
- sections: [
-                     {
-                      "title": `Cari ☺️`,
- rows: [
-                           {
-                              "title": "☺️\n\nIya bg gw emang 🐶, maaf bg lain kali gw sewa ko",
+                              "title": "GroupMenu",
                               "rowId": ""
                            },
                            {
-                              "title": "☺️\n\nIya bg gw emang 🐷, maaf bg lain kali gw sewa ko",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-//oktaaa cantipppp
-case 'sewaff2':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `_Hai ${pushname}_\n\nSilahkan pilih metode pembayaran`, "_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}sewa2`,buttonText:{displayText:'💞Ya'},type:1},{buttonId:`${prefix}gk`,buttonText:{displayText:'👀Tidak'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp ----------------------------
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp --------------------------111111222
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-case 'bcsticker':
-        case 'bcstik':
-					if (!issendMessage) return replyByRimuru(mess.only.userB) 
-			        if (!isOwner) return reply (mess.only.ownerB)
-					anu = await nayla.chats.all()
-					if (isMedia && !nay.message.videoMessage || isQuotedSticker) {
-						const encmedia = isQuotedSticker ? JSON.parse(JSON.stringify(nay).replace('quotedM','m')).message.extendedTextMessage.contextInfo : nay
-						bc = await nayla.downloadMediaMessage(encmedia)
-						for (let _ of anu) {
-							nayla.sendMessage(_.jid, bc, sticker, {quoted:ftroli})
-						}
-						reply('Suksess broadcast')
-					}
-					break
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-case 'donasi':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hai ${pushname} 🌹_* \n\nyakin nih mau donasi ? 🤔 Boong auto banned >_<`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}donasi1`,buttonText:{displayText:'💞Ya'},type:1},{buttonId:`${prefix}gk`,buttonText:{displayText:'👀Tidak'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-//oktaaa cantipppp
-case 'donasi1':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🌹\n\n Silahkan pilih mau donasi via apa`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}qrdonasi`,buttonText:{displayText:'QR CODE 📱'},type:1},{buttonId:`${prefix}donasi111`,buttonText:{displayText:'NOMOR 📱'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case 'qrdonasi':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🌹\n\n Silahkan pilih mau donasi via apa`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}qrovodonasi`,buttonText:{displayText:'QR OVO 📱'},type:1},{buttonId:`${prefix}qrgopaydonasi`,buttonText:{displayText:'QR GOPAY 📱'},type:1},{buttonId:`${prefix}qrdanadonasi`,buttonText:{displayText:'QR DANA 📱'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case 'donasi111':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🌹\n\n Silahkan pilih mau donasi via apa`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}11`,buttonText:{displayText:'OVO 💸'},type:1},{buttonId:`${prefix}111`,buttonText:{displayText:'DANA 💸'},type:1},{buttonId:`${prefix}1111`,buttonText:{displayText:'GOPAY 💸'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-//oktaaa cantipppp
-case 'qrovodonasi':
-denz.sendMessage(from, `Sedekah bukan menjadikan seorang Muslim menjadi miskin tetapi malah menjadikan kaya raya. Hal ini sesuai dengan ayat tentang sedekah dan infaq dalam Quran surat Al Baqarah ayat 276 yang berbunyi
-
-Arab: يَمْحَقُ اللّٰهُ الرِّبٰوا وَيُرْبِى الصَّدَقٰتِ ۗ وَاللّٰهُ لَا يُحِبُّ كُلَّ كَفَّارٍ اَثِيْمٍ
-
-Latin: yam-ḥaqullāhur-ribā wa yurbiṣ-ṣadaqāt, wallāhu lā yuḥibbu kulla kaffārin aṡīm
-
-Artinya: Allah memusnahkan riba dan menyuburkan sedekah. Allah tidak menyukai setiap orang yang tetap dalam kekafiran dan bergelimang dosa.`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "QRCODE OVO",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"OV1876"}}})
-break
-case 'qrgopaydonasi':
-denz.sendMessage(from, `Sedekah bukan menjadikan seorang Muslim menjadi miskin tetapi malah menjadikan kaya raya. Hal ini sesuai dengan ayat tentang sedekah dan infaq dalam Quran surat Al Baqarah ayat 276 yang berbunyi
-
-Arab: يَمْحَقُ اللّٰهُ الرِّبٰوا وَيُرْبِى الصَّدَقٰتِ ۗ وَاللّٰهُ لَا يُحِبُّ كُلَّ كَفَّارٍ اَثِيْمٍ
-
-Latin: yam-ḥaqullāhur-ribā wa yurbiṣ-ṣadaqāt, wallāhu lā yuḥibbu kulla kaffārin aṡīm
-
-Artinya: Allah memusnahkan riba dan menyuburkan sedekah. Allah tidak menyukai setiap orang yang tetap dalam kekafiran dan bergelimang dosa.`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "QRCODE GOPAY",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"GPY18ui876"}}})
-break
-case 'qrdanadonasi':
-denz.sendMessage(from, `Sedekah bukan menjadikan seorang Muslim menjadi miskin tetapi malah menjadikan kaya raya. Hal ini sesuai dengan ayat tentang sedekah dan infaq dalam Quran surat Al Baqarah ayat 276 yang berbunyi
-
-Arab: يَمْحَقُ اللّٰهُ الرِّبٰوا وَيُرْبِى الصَّدَقٰتِ ۗ وَاللّٰهُ لَا يُحِبُّ كُلَّ كَفَّارٍ اَثِيْمٍ
-
-Latin: yam-ḥaqullāhur-ribā wa yurbiṣ-ṣadaqāt, wallāhu lā yuḥibbu kulla kaffārin aṡīm
-
-Artinya: Allah memusnahkan riba dan menyuburkan sedekah. Allah tidak menyukai setiap orang yang tetap dalam kekafiran dan bergelimang dosa.`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "QRCODE DANA",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"DNA187736"}}})
-break
-case '11':
-menu = `Sedekah bukan menjadikan seorang Muslim menjadi miskin tetapi malah menjadikan kaya raya. Hal ini sesuai dengan ayat tentang sedekah dan infaq dalam Quran surat Al Baqarah ayat 276 yang berbunyi
-
-Arab: يَمْحَقُ اللّٰهُ الرِّبٰوا وَيُرْبِى الصَّدَقٰتِ ۗ وَاللّٰهُ لَا يُحِبُّ كُلَّ كَفَّارٍ اَثِيْمٍ
-
-Latin: yam-ḥaqullāhur-ribā wa yurbiṣ-ṣadaqāt, wallāhu lā yuḥibbu kulla kaffārin aṡīm
-
-Artinya: Allah memusnahkan riba dan menyuburkan sedekah. Allah tidak menyukai setiap orang yang tetap dalam kekafiran dan bergelimang dosa.`
-katalog(menu)
-listMsg = {
- buttonText: 'NOMOR',
- footerText: '*_Lolita Bot_*',
- description: `*Hai ${pushname} ☺️* \n\nsilahkan tekan "NOMOR" untuk melihat nomer ovo`,
- sections: [
-                     {
-                      "title": `OVO : 0${Noovo}`,
- rows: [
-                           {
-                              "title": "☺️",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case '111':
-menu = `Sedekah bukan menjadikan seorang Muslim menjadi miskin tetapi malah menjadikan kaya raya. Hal ini sesuai dengan ayat tentang sedekah dan infaq dalam Quran surat Al Baqarah ayat 276 yang berbunyi
-
-Arab: يَمْحَقُ اللّٰهُ الرِّبٰوا وَيُرْبِى الصَّدَقٰتِ ۗ وَاللّٰهُ لَا يُحِبُّ كُلَّ كَفَّارٍ اَثِيْمٍ
-
-Latin: yam-ḥaqullāhur-ribā wa yurbiṣ-ṣadaqāt, wallāhu lā yuḥibbu kulla kaffārin aṡīm
-
-Artinya: Allah memusnahkan riba dan menyuburkan sedekah. Allah tidak menyukai setiap orang yang tetap dalam kekafiran dan bergelimang dosa.`
-katalog(menu)
-listMsg = {
- buttonText: 'NOMOR',
- footerText: '*_Lolita Bot_*',
- description: `*Hai ${pushname} ☺️* \n\nsilahkan tekan "NOMOR" untuk melihat nomer dana`,
- sections: [
-                     {
-                      "title": `DANA : 0${Nodana}`,
- rows: [
-                           {
-                              "title": "☺️",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case '1111':
-menu = `Sedekah bukan menjadikan seorang Muslim menjadi miskin tetapi malah menjadikan kaya raya. Hal ini sesuai dengan ayat tentang sedekah dan infaq dalam Quran surat Al Baqarah ayat 276 yang berbunyi
-
-Arab: يَمْحَقُ اللّٰهُ الرِّبٰوا وَيُرْبِى الصَّدَقٰتِ ۗ وَاللّٰهُ لَا يُحِبُّ كُلَّ كَفَّارٍ اَثِيْمٍ
-
-Latin: yam-ḥaqullāhur-ribā wa yurbiṣ-ṣadaqāt, wallāhu lā yuḥibbu kulla kaffārin aṡīm
-
-Artinya: Allah memusnahkan riba dan menyuburkan sedekah. Allah tidak menyukai setiap orang yang tetap dalam kekafiran dan bergelimang dosa.`
-katalog(menu)
-listMsg = {
- buttonText: 'NOMOR',
- footerText: '*_Lolita Bot_*',
- description: `*Hai ${pushname} ☺️* \n\nsilahkan tekan "NOMOR" untuk melihat nomer gopay`,
- sections: [
-                     {
-                      "title": `GOPAY : 0${Nogpy}`,
- rows: [
-                           {
-                              "title": "☺️",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-/// Okta cantipp
-case 'botmenu':
-sendButLocation(from, `${NamaBot}`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}list1`,buttonText:{displayText:'MENU 1📋'},type:1},{buttonId:`${prefix}list2`,buttonText:{displayText:'MENU 2📋'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-/// Okta cantipp
-/// Okta cantipp
-case 'list1':
- listMsg = {
- buttonText: 'KLIK DISINI',
- footerText: '*_Lolita Bot_*',
- description: `_*Hay kak @${stod.split('@')[0]}*_ 😄\n\n Silahkan pilih menu disini`,
- sections: [
-                     {
-                      "title": `${jmn} - ${week} ${weton} - ${calender}`,
- rows: [
-                          {
-                              "title": "Script \n\n _Lolita Bot_",
+                              "title": "OtherMenu",
                               "rowId": ""
                            },
                            {
-                              "title": "Speed \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "Status \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "Creator \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "Jadibot \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "Runtime \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "OwnerMenu \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "MakerMenu \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "GroupMenu \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "OtherMenu \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "DownloadMenu \n\n _Lolita Bot_",
+                              "title": "DownloadMenu",
                               "rowId": ""
                            }
                         ]
@@ -1993,1577 +1298,7 @@ case 'list1':
 }
 denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
 break
-case 'list2':
- listMsg = {
- buttonText: 'KLIK DISINI',
- footerText: '*_Lolita Bot_*',
- description: `_*Hay kak @${stod.split('@')[0]}*_ 😄\n\n Silahkan pilih menu disini`,
- sections: [
-                     {
-                      "title": `${jmn} - ${week} ${weton} - ${calender}`,
- rows: [
-                          {
-                              "title": "Script \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "Speed \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "Status \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "Creator \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "Jadibot \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "Runtime \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "OwnerMenu2 \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "MakerMenu2 \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "GroupMenu2 \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "OtherMenu2 \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "DownloadMenu2 \n\n _Lolita Bot_",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'gw1':
-menu = `*Hai ${pushname}*
-
-Mau Join Grub ${NamaBot} 😄
-
-*GRUB ${NamaBot} :*
-https://chat.whatsapp.com/EEHIf2lgMfi09iRkZYELa7
-
-*GRUB ${NamaBot}2 :*
-https://chat.whatsapp.com/EEHIf2lgMfi09iRkZYELa7
-
-*GRUB ${NamaBot}3 :*
-https://chat.whatsapp.com/EEHIf2lgMfi09iRkZYELa7
-`
-katalog(menu)
-break
-case 'listdm1':
- listMsg = {
- buttonText: 'KLIK DISINI',
- footerText: '*_Lolita Bot_*',
- description: `*Hai kak @${stod.split('@')[0]}🌹*\n\n\List diamond by ${NamaBot} disini kak silahkan di pilih`,
- sections: [
-                     {
-                      "title": `${jmn} - ${week} ${weton} - ${calender}`,
- rows: [
-                          {
-                              "title": "70💎 = IDR 10.000 \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "100💎 = IDR 15.000 \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "140💎 = IDR 20.000 \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "210💎 = IDR 30.000 \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "355💎 = IDR 50.000 \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "500💎 = IDR 70.000 \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "720💎 IDR 100.000 \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "1000💎 IDR 140.000 \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "1215💎 IDR 167.000 \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "2005💎 IDR 270.000 \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "4005💎 IDR 535.000 \n\n _Lolita Bot_",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'member1':
- listMsg = {
- buttonText: 'KLIK DISINI',
- footerText: '*_Lolita Bot_*',
- description: `*Hai kak @${stod.split('@')[0]}🌹*\n\n\List diamond by ${NamaBot} disini kak silahkan di pilih`,
- sections: [
-                     {
-                      "title": `${jmn} - ${week} ${weton} - ${calender}`,
- rows: [
-                          {
-                              "title": "💳mingguan = IDR 30.000 \n\n _Lolita Bot_",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "💳bulanan = IDR 117.000 \n\n _Lolita Bot_",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-//Biar ga ribet aja//
-case '70💎':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 70 diamond dengan harga IDR 10.000\n•Pilih back jika ingin kemabli ke list menu`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay1`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case '100💎':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 100 diamond dengan harga IDR 15.000\n•Pilih back jika ingin kemabli ke list menu`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay2`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case '140💎':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 140 diamond dengan harga IDR 20.000\n•Pilih back jika ingin kemabli ke list menu`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay3`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case '210💎':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 210 diamond dengan harga IDR 30.000\n•Pilih back jika ingin kemabli ke list menu`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay4`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case '355💎':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 355 diamond dengan harga IDR 50.000\n•Pilih back jika ingin kemabli ke list menu`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay5`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case '500💎':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 500 diamond dengan harga IDR 70.000\n•Pilih back jika ingin kemabli ke list menu`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay6`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case '720💎':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 720 diamond dengan harga IDR 100.000\n•Pilih back jika ingin kemabli ke list menu`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay7`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case '1000💎':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 1000 diamond dengan harga IDR 140.000\n•Pilih back jika ingin kemabli ke list menu`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay8`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case '1215💎':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 1215 diamond dengan harga IDR 167.000\n•Pilih back jika ingin kemabli ke list menu`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay9`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case '2005💎':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 2005 diamond dengan harga IDR 270.000\n•Pilih back jika ingin kemabli ke list menu`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay10`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case '4005💎':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli 4005 diamond dengan harga IDR 535.000\n•Pilih back jika ingin kemabli ke list menu`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay11`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case '💳mingguan':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli M.MINGGUAN dengan harga IDR 30.000\n•Pilih back jika ingin kemabli ke list menu`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay12`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case '💳bulanan':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 😄\n\n•Pilih payment jika ingin membeli M.BULANAN dengan harga IDR 117.000\n•Pilih back jika ingin kemabli ke list menu`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}topup`,buttonText:{displayText:'⬅️ BACK'},type:1},{buttonId:`${prefix}pay13`,buttonText:{displayText:'💸 PAYMENT'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-//ini pembayaran ny//
-break
-case 'pay1':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay1`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana1`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo1`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case 'pay2':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay2`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana2`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo2`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case 'pay3':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay3`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana3`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo3`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case 'pay4':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay4`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana4`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo4`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case 'pay5':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay5`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana5`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo5`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case 'pay6':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay6`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana6`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo6`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case 'pay7':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay7`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana7`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo7`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case 'pay8':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay8`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana8`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo8`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case 'pay9':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay9`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana9`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo9`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case 'pay10':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay10`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana10`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo10`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case 'pay11':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay11`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana11`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo11`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case 'pay12':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay12`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana12`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo12`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case 'pay13':
-        case '0':
-        stod = `${sender}`
-       stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
-				stst = stst.status == 401 ? '' : stst.status
-			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `0`
-sendButLocation(from, `*_Hay ${pushname}_* 🥰\n\nBerikut adalah pembayaran yang tersedia di ${NamaBot}`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}gopay13`,buttonText:{displayText:'💸GOPAY'},type:1},{buttonId:`${prefix}dana13`,buttonText:{displayText:'💸DANA'},type:1},{buttonId:`${prefix}ovo13`,buttonText:{displayText:'💸OVO'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-//ini nomer nya //
-case 'gopay1':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 70💎
-║ • _Harga : IDR 10.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `GOPAY : 0${Nogpy}`,
- rows: [
-                           {
-                              "title": "QRcodegopay",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'gopay2':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 100💎
-║ • _Harga : IDR 15.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `GOPAY : 0${Nogpy}`,
- rows: [
-                           {
-                              "title": "QRcodegopay",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'gopay3':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 140💎
-║ • _Harga : IDR 20.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `GOPAY : 0${Nogpy}`,
- rows: [
-                           {
-                              "title": "QRcodegopay",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'gopay4':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 210💎
-║ • _Harga : IDR 30.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `GOPAY : 0${Nogpy}`,
- rows: [
-                           {
-                              "title": "QRcodegopay",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'gopay5':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 355💎
-║ • _Harga : IDR 50.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `GOPAY : 0${Nogpy}`,
- rows: [
-                           {
-                              "title": "QRcodegopay",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'gopay6':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 500💎
-║ • _Harga : IDR 70.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `GOPAY : 0${Nogpy}`,
- rows: [
-                           {
-                              "title": "QRcodegopay",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'gopay7':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 720💎
-║ • _Harga : IDR 100.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `GOPAY : 0${Nogpy}`,
- rows: [
-                           {
-                              "title": "QRcodegopay",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'gopay8':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 1000💎
-║ • _Harga : IDR 140.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `GOPAY : 0${Nogpy}`,
- rows: [
-                           {
-                              "title": "QRcodegopay",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'gopay9':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 1215💎
-║ • _Harga : IDR 167.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `GOPAY : 0${Nogpy}`,
- rows: [
-                           {
-                              "title": "QRcodegopay",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'gopay10':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 2005💎
-║ • _Harga : IDR 270.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `GOPAY : 0${Nogpy}`,
- rows: [
-                           {
-                              "title": "QRcodegopay",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'gopay11':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 4005💎
-║ • _Harga : IDR 535.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `GOPAY : 0${Nogpy}`,
- rows: [
-                           {
-                              "title": "QRcodegopay",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'gopay12':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 💳M.MINGGUAN
-║ • _Harga : IDR 30.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `GOPAY : 0${Nogpy}`,
- rows: [
-                           {
-                              "title": "QRcodegopay",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'gopay13':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 💳M.BULANAN
-║ • _Harga : IDR 117.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `GOPAY : 0${Nogpy}`,
- rows: [
-                           {
-                              "title": "QRcodegopay",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-//Nomer Dnaa yaa
-case 'dana1':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 70💎
-║ • _Harga : IDR 10.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `DANA : 0${Nodana}`,
- rows: [
-                           {
-                              "title": "QRcodedana",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'dana2':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 100💎
-║ • _Harga : IDR 15.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `DANA : 0${Nodana}`,
- rows: [
-                           {
-                              "title": "QRcodedana",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'dana3':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 140💎
-║ • _Harga : IDR 20.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `DANA : 0${Nodana}`,
- rows: [
-                           {
-                              "title": "QRcodedana",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'dana4':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 210💎
-║ • _Harga : IDR 30.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `DANA : 0${Nodana}`,
- rows: [
-                           {
-                              "title": "QRcodedana",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'dana5':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 355💎
-║ • _Harga : IDR 50.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `DANA : 0${Nodana}`,
- rows: [
-                           {
-                              "title": "QRcodedana",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'dana6':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 500💎
-║ • _Harga : IDR 70.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `DANA : 0${Nodana}`,
- rows: [
-                           {
-                              "title": "QRcodedana",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'dana7':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 720💎
-║ • _Harga : IDR 100.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `DANA : 0${Nodana}`,
- rows: [
-                           {
-                              "title": "QRcodedana",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'dana8':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 1000💎
-║ • _Harga : IDR 140.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `DANA : 0${Nodana}`,
- rows: [
-                           {
-                              "title": "QRcodedana",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'dana9':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 1215💎
-║ • _Harga : IDR 167.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `DANA : 0${Nodana}`,
- rows: [
-                           {
-                              "title": "QRcodedana",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'dana10':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 2005💎
-║ • _Harga : IDR 270.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `DANA : 0${Nodana}`,
- rows: [
-                           {
-                              "title": "QRcodedana",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'dana11':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 4005💎
-║ • _Harga : IDR 535.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `DANA : 0${Nodana}`,
- rows: [
-                           {
-                              "title": "QRcodedana",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'dana12':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 💳M.MINGGUAN
-║ • _Harga : IDR 30.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `DANA : 0${Nodana}`,
- rows: [
-                           {
-                              "title": "QRcodedana",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'dana13':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 💳M.BULANAN
-║ • _Harga : IDR 117.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `DANA : 0${Nodana}`,
- rows: [
-                           {
-                              "title": "QRcodedana",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-//ovo yaaa Okta Cantippppppp
-case 'ovo1':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 70💎
-║ • _Harga : IDR 10.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `OVO : 0${Noovo}`,
- rows: [
-                           {
-                              "title": "QRcodeovo",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'ovo2':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 100💎
-║ • _Harga : IDR 15.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `OVO : 0${Noovo}`,
- rows: [
-                           {
-                              "title": "QRcodeovo",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'ovo3':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 140💎
-║ • _Harga : IDR 20.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `OVO : 0${Noovo}`,
- rows: [
-                           {
-                              "title": "QRcodeovo",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'ovo4':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 210💎
-║ • _Harga : IDR 30.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `OVO : 0${Noovo}`,
- rows: [
-                           {
-                              "title": "QRcodeovo",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'ovo5':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 355💎
-║ • _Harga : IDR 50.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `OVO : 0${Noovo}`,
- rows: [
-                           {
-                              "title": "QRcodeovo",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'ovo6':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 500💎
-║ • _Harga : IDR 70.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `OVO : 0${Noovo}`,
- rows: [
-                           {
-                              "title": "QRcodeovo",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'ovo7':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 720💎
-║ • _Harga : IDR 100.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `OVO : 0${Noovo}`,
- rows: [
-                           {
-                              "title": "QRcodeovo",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'ovo8':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 1000💎
-║ • _Harga : IDR 140.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `OVO : 0${Noovo}`,
- rows: [
-                           {
-                              "title": "QRcodeovo",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'ovo9':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 1215💎
-║ • _Harga : IDR 167.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `OVO : 0${Noovo}`,
- rows: [
-                           {
-                              "title": "QRcodeovo",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'ovo10':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 2005💎
-║ • _Harga : IDR 270.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `OVO : 0${Noovo}`,
- rows: [
-                           {
-                              "title": "QRcodeovo",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'ovo11':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 4005💎
-║ • _Harga : IDR 535.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `OVO : 0${Noovo}`,
- rows: [
-                           {
-                              "title": "QRcodeovo",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'ovo12':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 💳M.MINGGUAN
-║ • _Harga : IDR 30.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `OVO : 0${Noovo}`,
- rows: [
-                           {
-                              "title": "QRcodeovo",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'ovo13':
- listMsg = {
- buttonText: 'NOMOR / QRCODE',
- footerText: '▌│█║▌║▌║║▌║▌║█│▌\n▌│█║▌║▌║║▌║▌║█│▌',
- description: `╔════════════════════
-║ • _Nama : ${pushname}_
-║ • _Nomor : ${sender.split("@")[0]}_
-╠════════════════════
-║ • _Nominal : 💳M.BULANAN
-║ • _Harga : IDR 117.000
-╠════════════════════
-║ _*${jmn} - ${week} - ${calender}*_
-╚════════════════════
-*[❗] Sertakan Bukti Pembayaran*
--------------------------------------------------------
-*「 ${NamaBot} 」*`,
- sections: [
-                     {
-                      "title": `OVO : 0${Noovo}`,
- rows: [
-                           {
-                              "title": "QRcodeovo",
-                              "rowId": ""
-                           }
-                        ]
-                     }],
- listType: 1
-}
-denz.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftrol})
-break
-case 'onu':
-reply(`Berhasil menonaktifkan autorespon`)
-break
-case '💳min':
+case 'ownermenu':
 menu = `❏ 「 \`\`\`MENU OWNER\`\`\` 」
 ├────────────────────
 ├ ${prefix}stopjadibot
@@ -3598,7 +1333,7 @@ menu = `❏ 「 \`\`\`MENU OWNER\`\`\` 」
 ├ ${prefix}exif [ _nama|author_ ]
 ├ ${prefix}setprofile [ _reply image_ ]
 ├ ${prefix}setname [ _teks_ ]
-├ ${prefix}setprefix [ _multi/nopref_ ]
+├ ${prefix}setprefix [ _multi/nopref/prefix_ ]
 ├ ${prefix}setbio [ _teks_ ]
 ├ ${prefix}addsticker [ _nama_ ]
 ├ ${prefix}delsticker [ _nama_ ]
@@ -3620,233 +1355,379 @@ menu = `❏ 「 \`\`\`MENU OWNER\`\`\` 」
 ├ ${prefix}addrespon [ _tanya|jawab_ ]
 └ ${prefix}delrespon [ _nama_ ]`
 katalog(menu)
-sendButLocation(from, `Hai ${pushname} shilahkan di pilih menu di atas ☺️`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}sewa`,buttonText:{displayText:'SEWA 🎟️'},type:1},{buttonId:`${prefix}donasi`,buttonText:{displayText:'DONASI ♨️'},type:1},{buttonId:`${prefix}topup`,buttonText:{displayText:'TOP UP 💎'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-break
-case 'ownermenu2':
-menu = `❏ 「 \`\`\`MENU OWNER\`\`\` 」
-├────────────────────
-├ 🔖 ${prefix}stopjadibot
-├ 🔖 ${prefix}autorespon [ _on/off_ ]
-├ 🔖 ${prefix}bc [ _teks/reply gif/image/video with caption_ ]
-├ 🔖 ${prefix}tobc [ _reply sticker/audio with caption_ ]
-├ 🔖 ${prefix}return [ _javascript_ ]
-├ 🔖 ${prefix}clearall
-├ 🔖 ${prefix}delchat
-├ 🔖 ${prefix}mute
-├ 🔖 ${prefix}unmute
-├ 🔖 ${prefix}public
-├ 🔖 ${prefix}self
-├ 🔖 ${prefix}spam [ _teks|jumlah_ ]
-├ 🔖 ${prefix}demoteall
-├ 🔖 ${prefix}promoteall
-├ 🔖 ${prefix}addcmd [ _teks reply stc_ ]
-├ 🔖 ${prefix}delcmd [ _reply stc_ ]
-├ 🔖 ${prefix}listcmd
-├ 🔖 ${prefix}spamsw [ _teks|jumlah_ ]
-├ 🔖 ${prefix}upswteks [ _teks_ ]
-├ 🔖 ${prefix}upswlokasi [ _teks_ ]
-├ 🔖 ${prefix}upswaudio [ _reply audio_ ]
-├ 🔖 ${prefix}upswvoice [ _reply audio_ ]
-├ 🔖 ${prefix}upswsticker [ _reply sticker_ ]
-├ 🔖 ${prefix}upswimage [ _reply image with caption_ ]
-├ 🔖 ${prefix}upswgif [ _reply gif with caption_ ]
-├ 🔖 ${prefix}upswvideo [ _reply video with caption_ ]
-├ 🔖 ${prefix}shutdown
-├ 🔖 ${prefix}offline [ _alasan_ ]
-├ 🔖 ${prefix}online
-├ 🔖 ${prefix}exif [ _nama|author_ ]
-├ 🔖 ${prefix}setprofile [ _reply image_ ]
-├ 🔖 ${prefix}setname [ _teks_ ]
-├ 🔖 ${prefix}setprefix [ _multi/nopref_ ]
-├ 🔖 ${prefix}setbio [ _teks_ ]
-├ 🔖 ${prefix}addsticker [ _nama_ ]
-├ 🔖 ${prefix}delsticker [ _nama_ ]
-├ 🔖 ${prefix}addvn [ _nama_ ]
-├ 🔖 ${prefix}delvn [ _nama_ ]
-├ 🔖 ${prefix}addimage [ _nama_ ]
-├ 🔖 ${prefix}delimage [ _nama_ ]
-├ 🔖 ${prefix}bug [ _jumlah_ ]
-├ 🔖 ${prefix}bugpc2 [ _jumlah_ ]
-├ 🔖 ${prefix}bugtroli2 [ _jumlah_ ]
-├ 🔖 ${prefix}bugpc
-├ 🔖 ${prefix}bugcombine
-├ 🔖 ${prefix}bugtroli
-├ 🔖 ${prefix}buglokasi
-├ 🔖 ${prefix}bughole
-├ 🔖 ${prefix}leave
-├ 🔖 ${prefix}restart
-├ 🔖 ${prefix}join [ _link group_ ]
-├ 🔖 ${prefix}addrespon [ _tanya|jawab_ ]
-└ 🔖 ${prefix}delrespon [ _nama_ ]`
-katalog(menu)
-break
-case 'downloadmenu2':
-menu = `❏ 「 \`\`\`MENU DOWNLOAD\`\`\` 」
-├────────────────────
-├ 🔖 ${prefix}infogempa
-├ 🔖 ${prefix}herolist
-├ 🔖 ${prefix}herodetail [ _hero_ ]
-├ 🔖 ${prefix}google [ _search_ ]
-├ 🔖 ${prefix}gimage [ _search_ ]
-├ 🔖 ${prefix}wiki [ _search_ ]
-├ 🔖 ${prefix}mediafire [ _link_ ]
-├ 🔖 ${prefix}ytsearch [ _judul_ ]
-├ 🔖 ${prefix}ytmp4 [ _link yt_ ]
-├ 🔖 ${prefix}ytmp3 [ _link yt_ ]
-├ 🔖 ${prefix}play [ _judul lagu_ ]
-├ 🔖 ${prefix}video [ _judul video_ ]
-├ 🔖 ${prefix}tinyurl [ _link_ ]
-├ 🔖 ${prefix}fetch [ _link_ ]
-├ 🔖 ${prefix}igdl [ _link_ ]
-├ 🔖 ${prefix}tiktokdl [ _link_ ]
-├ 🔖 ${prefix}pinterest [ _search_ ]
-├ 🔖 ${prefix}lirik [ _judul_ ]
-├ 🔖 ${prefix}tourl [ _reply image/video_ ]
-├ 🔖 ${prefix}resepmasakan [ _judul_ ]
-├ 🔖 ${prefix}artimimpi [ _teks_ ]
-├ 🔖 ${prefix}bilangangka [ _angka_ ]
-├ 🔖 ${prefix}kalkulator [ _angka_ ]
-├ 🔖 ${prefix}fancytext [ _teks_ ]
-├ 🔖 ${prefix}githubstalk [ _username_ ]
-├ 🔖 ${prefix}translate [ _kodebhs|teks_ ]
-└ 🔖 ${prefix}ss [ _link_ ]`
-katalog(menu)
-break
-case 'makermenu2':
-menu = `❏ 「 \`\`\`MENU MAKER\`\`\` 」
-├────────────────────
-├ 🔖 ${prefix}matrix [ _teks_ ]
-├ 🔖 ${prefix}googletxt [ _teks_ ]
-├ 🔖 ${prefix}spiderman [ _teks_ ]
-├ 🔖 ${prefix}express [ _teks_ ]
-├ 🔖 ${prefix}dance [ _teks_ ]
-├ 🔖 ${prefix}blackbird [ _teks_ ]
-├ 🔖 ${prefix}halloween [ _teks_ ]
-├ 🔖 ${prefix}vampire [ _teks_ ]
-├ 🔖 ${prefix}codetxt [ _teks_ ]
-├ 🔖 ${prefix}text3d [ _teks_ ]
-└ 🔖 ${prefix}warrior [ _teks_ ]`
-katalog(menu)
-break
-case 'groupmenu2':
-menu = `❏ 「 \`\`\`MENU GROUP\`\`\` 」
-├────────────────────
-├ 🔖 ${prefix}getpict [ _@tag_ ]
-├ 🔖 ${prefix}getname [ _reply target_ ]
-├ 🔖 ${prefix}getbio [ _reply target_ ]
-├ 🔖 ${prefix}promote [ _@tag_ ]
-├ 🔖 ${prefix}demote [ _@tag_ ]
-├ 🔖 ${prefix}antilink [ _1/0_ ]
-├ 🔖 ${prefix}creategrup [ _nama|@tag_ ]
-├ 🔖 ${prefix}tictactoe [ _@tag_ ]
-├ 🔖 ${prefix}delttt
-├ 🔖 ${prefix}getpp
-├ 🔖 ${prefix}kick [ _@tag_ ]
-├ 🔖 ${prefix}add [ _nomor_ ]
-├ 🔖 ${prefix}getdeskgc
-├ 🔖 ${prefix}sider [ _reply pesan bot_ ]
-├ 🔖 ${prefix}hacked [ _teks_ ]
-├ 🔖 ${prefix}setnamegc [ _teks_ ]
-├ 🔖 ${prefix}setdeskgc [ _teks_ ]
-├ 🔖 ${prefix}fitnah [ _@tag|teks1|teks2_ ]
-├ 🔖 ${prefix}kontak [ _@tag|nama_ ]
-├ 🔖 ${prefix}kontag [ _@tag|nama_ ]
-├ 🔖 ${prefix}gc
-├ 🔖 ${prefix}resetlinkgc
-├ 🔖 ${prefix}linkgrup
-├ 🔖 ${prefix}hidetag [ _teks_ ]
-├ 🔖 ${prefix}sticktag [ _nama sticker_ ]
-└ 🔖 ${prefix}totag [ _reply media_ ]`
-katalog(menu)
-break
-case 'othermenu2':
-menu = `❏ 「 \`\`\`MENU OTHER\`\`\` 」
-├────────────────────
-├ 🔖 ${prefix}jadibot
-├ 🔖 ${prefix}caripesan [ _teks|jumlah_ ]
-├ 🔖 ${prefix}slots
-├ 🔖 ${prefix}suit [ _gunting/batu/kertas_ ]
-├ 🔖 ${prefix}tag [ _nomor_ ]
-├ 🔖 ${prefix}tagme
-├ 🔖 ${prefix}tts [ _kodebhs teks_ ]
-├ 🔖 ${prefix}readmore [ _teks1|teks2_ ]
-├ 🔖 ${prefix}fitnahpc [ _nomor|teks1|teks2_ ]
-├ 🔖 ${prefix}chat [ _nomor|teks_ ]
-├ 🔖 ${prefix}fdeface [ _replyimg link|teks1|teks2_ ]
-├ 🔖 ${prefix}listimage
-├ 🔖 ${prefix}liststicker
-├ 🔖 ${prefix}listvn
-├ 🔖 ${prefix}listgrup
-├ 🔖 ${prefix}baileys [ _reply message_ ]
-├ 🔖 ${prefix}q [ _reply message_ ]
-├ 🔖 ${prefix}getcaption [ _reply message_ ]
-├ 🔖 ${prefix}pantun
-├ 🔖 ${prefix}tospam [ _reply audio/sticker/image|jumlah_ ]
-├ 🔖 ${prefix}sharelock [ _teks1|teks2_ ]
-├ 🔖 ${prefix}sticker
-├ 🔖 ${prefix}stickerwm [ _nama|author_ ]
-├ 🔖 ${prefix}takestick [ _nama|author_ ]
-├ 🔖 ${prefix}colong [ _reply sticker_ ]
-├ 🔖 ${prefix}dadu
-├ 🔖 ${prefix}semoji [ _emoji_ ]
-├ 🔖 ${prefix}attp [ _teks_ ]
-├ 🔖 ${prefix}toimg
-├ 🔖 ${prefix}tomp3 [ _reply video_ ]
-├ 🔖 ${prefix}tomp4 [ _reply sticker gif_ ]
-├ 🔖 ${prefix}robot [ _reply audio_ ]
-├ 🔖 ${prefix}balik [ _reply audio_ ]
-├ 🔖 ${prefix}bass [ _reply audio_ ]
-├ 🔖 ${prefix}gemuk [ _reply audio_ ]
-├ 🔖 ${prefix}detikvn [ _reply audio caption angka_ ]
-└ 🔖 ${prefix}detikvideo [ _reply video caption angka_ ]`
-katalog(menu)
-break
-//menu web
-case 'ownermenu':
-denz.sendMessage(from, `*HAI ${pushname}🌹*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "👨‍💻OWNER MENU👨‍💻",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://bit.ly/OwnerMenu"}}})
-break
-case 'othermenu':
-denz.sendMessage(from, `*HAI ${pushname}🌹*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "👦OTHER MENU👦",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://bit.ly/OtherMenu"}}})
-break
-case 'groupmenu':
-denz.sendMessage(from, `*HAI ${pushname}🌹*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "👥GROUP MENU👥",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://bit.ly/GroupMenu12"}}})
-break
-case 'makermenu':
-denz.sendMessage(from, `*HAI ${pushname}🌹*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "🖍️ MAKER MENU🖍️",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://bit.ly/MakerMenu"}}})
 break
 case 'downloadmenu':
-denz.sendMessage(from, `*HAI ${pushname}🌹*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "📲 DOWNLOAD MENU📲",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://bit.ly/DownloadMenu1"}}})
-break
-case 'listdm':
-denz.sendMessage(from, `*${pushname}🌹*\n\nSebelum Top Up Kirim Id Dulu Dengan Cara Ketik *${prefix}id*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "HAI🌹",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://m.youtube.com/channel/UCqkpkST3ElnoHNAwEcuRX3g"}}})
-break
-case 'member':
-denz.sendMessage(from, `*${pushname}🌹*\n\nSebelum Top Up Kirim Id Dulu Dengan Cara Ketik *${prefix}uid*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "HAI🌹",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://m.youtube.com/channel/UCqkpkST3ElnoHNAwEcuRX3g"}}})
-break
-case 'id':
-					if (!c) return reply(`ID Nya Mana Kak?\nContoh :\n${prefix}id 123456789`)
-					atetepe = await getBuffer(`https://wa.me/6285855159230?text=Assalamualaikum${encodeURIComponent(c)}`)
-					sendButLocation(from, `Nama : _${pushname}_\nNomor : _${stod.split('@')[0]}_\nID : _${encodeURIComponent(c)}_`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}listdm1`,buttonText:{displayText:'NEXT ➡️'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-					break
-case 'uid':
-					if (!c) return reply(`ID Nya Mana Kak?\nContoh :\n${prefix}uid 123456789`)
-					atetepe = await getBuffer(`https://wa.me/6285855159230?text=Assalamualaikum${encodeURIComponent(c)}`)
-					sendButLocation(from, `Nama : _${pushname}_\nNomor : _${stod.split('@')[0]}_\nID : _${encodeURIComponent(c)}_`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}member1`,buttonText:{displayText:'NEXT ➡️'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
-					break
-case 'qrcodeovo':
-denz.sendMessage(from,`*HAI ${pushname}🌹*\n\n• Scan Qrcode Diatas\n• Isi Nominal Sesuai Pilihan\n• Transfer Sesuai Nominal`, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "📲 QRCODE OVO 📲",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"OV1876"}}})
-break
-case 'qrcodedana':
-denz.sendMessage(from,`*HAI ${pushname}🌹*\n\n• Scan Qrcode Diatas\n• Isi Nominal Sesuai Pilihan\n• Transfer Sesuai Nominal`, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "📲 QRCODE DANA 📲",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"DNA187736"}}})
-break
-case 'qrcodegopay':
-denz.sendMessage(from`*HAI ${pushname}🌹*\n\n• Scan Qrcode Diatas\n• Isi Nominal Sesuai Pilihan\n• Transfer Sesuai Nominal`, text, { thumbnail: dfrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "📲 QRCODE GOPAY 📲",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"GPY18ui876"}}})
-break
-//pppppp
-case 'jadibot':
-menu = `Enak aja lu mau numpang sewa lah :v`
+menu = `❏ 「 \`\`\`MENU DOWNLOAD\`\`\` 」
+├────────────────────
+├ ${prefix}infogempa
+├ ${prefix}herolist
+├ ${prefix}herodetail [ _hero_ ]
+├ ${prefix}google [ _search_ ]
+├ ${prefix}gimage [ _search_ ]
+├ ${prefix}wiki [ _search_ ]
+├ ${prefix}mediafire [ _link_ ]
+├ ${prefix}ytsearch [ _judul_ ]
+├ ${prefix}ytmp4 [ _link yt_ ]
+├ ${prefix}ytmp3 [ _link yt_ ]
+├ ${prefix}play [ _judul lagu_ ]
+├ ${prefix}video [ _judul video_ ]
+├ ${prefix}tinyurl [ _link_ ]
+├ ${prefix}fetch [ _link_ ]
+├ ${prefix}igdl [ _link_ ]
+├ ${prefix}tiktokdl [ _link_ ]
+├ ${prefix}pinterest [ _search_ ]
+├ ${prefix}lirik [ _judul_ ]
+├ ${prefix}tourl [ _reply image/video_ ]
+├ ${prefix}resepmasakan [ _judul_ ]
+├ ${prefix}artimimpi [ _teks_ ]
+├ ${prefix}bilangangka [ _angka_ ]
+├ ${prefix}kalkulator [ _angka_ ]
+├ ${prefix}fancytext [ _teks_ ]
+├ ${prefix}githubstalk [ _username_ ]
+├ ${prefix}translate [ _kodebhs|teks_ ]
+└ ${prefix}ss [ _link_ ]`
 katalog(menu)
-sendButLocation(from, `Hai ${pushname} ☺️`, "*_Lolita Bot_*", {jpegThumbnail:ofrply}, [{buttonId:`${prefix}sewa`,buttonText:{displayText:'SEWA 🎟️'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+break
+case 'makermenu':
+menu = `❏ 「 \`\`\`MENU MAKER\`\`\` 」
+├────────────────────
+├ ${prefix}matrix [ _teks_ ]
+├ ${prefix}googletxt [ _teks_ ]
+├ ${prefix}spiderman [ _teks_ ]
+├ ${prefix}express [ _teks_ ]
+├ ${prefix}dance [ _teks_ ]
+├ ${prefix}blackbird [ _teks_ ]
+├ ${prefix}halloween [ _teks_ ]
+├ ${prefix}vampire [ _teks_ ]
+├ ${prefix}codetxt [ _teks_ ]
+├ ${prefix}text3d [ _teks_ ]
+└ ${prefix}warrior [ _teks_ ]`
+katalog(menu)
+break
+case 'groupmenu':
+menu = `❏ 「 \`\`\`MENU GROUP\`\`\` 」
+├────────────────────
+├ ${prefix}getpict [ _@tag_ ]
+├ ${prefix}getname [ _reply target_ ]
+├ ${prefix}getbio [ _reply target_ ]
+├ ${prefix}promote [ _@tag_ ]
+├ ${prefix}demote [ _@tag_ ]
+├ ${prefix}antilink [ _1/0_ ]
+├ ${prefix}creategrup [ _nama|@tag_ ]
+├ ${prefix}tictactoe [ _@tag_ ]
+├ ${prefix}delttt
+├ ${prefix}getpp
+├ ${prefix}kick [ _@tag_ ]
+├ ${prefix}add [ _nomor_ ]
+├ ${prefix}getdeskgc
+├ ${prefix}sider [ _reply pesan bot_ ]
+├ ${prefix}hacked [ _teks_ ]
+├ ${prefix}setnamegc [ _teks_ ]
+├ ${prefix}setdeskgc [ _teks_ ]
+├ ${prefix}fitnah [ _@tag|teks1|teks2_ ]
+├ ${prefix}kontak [ _@tag|nama_ ]
+├ ${prefix}kontag [ _@tag|nama_ ]
+├ ${prefix}opengc
+├ ${prefix}closegc
+├ ${prefix}resetlinkgc
+├ ${prefix}linkgrup
+├ ${prefix}hidetag [ _teks_ ]
+├ ${prefix}sticktag [ _nama sticker_ ]
+└ ${prefix}totag [ _reply media_ ]`
+katalog(menu)
+break
+case 'othermenu':
+menu = `❏ 「 \`\`\`MENU OTHER\`\`\` 」
+├────────────────────
+├ ${prefix}jadibot
+├ ${prefix}caripesan [ _teks|jumlah_ ]
+├ ${prefix}slots
+├ ${prefix}suit [ _gunting/batu/kertas_ ]
+├ ${prefix}tag [ _nomor_ ]
+├ ${prefix}tagme
+├ ${prefix}tts [ _kodebhs teks_ ]
+├ ${prefix}readmore [ _teks1|teks2_ ]
+├ ${prefix}fitnahpc [ _nomor|teks1|teks2_ ]
+├ ${prefix}chat [ _nomor|teks_ ]
+├ ${prefix}fdeface [ _replyimg link|teks1|teks2_ ]
+├ ${prefix}listimage
+├ ${prefix}liststicker
+├ ${prefix}listvn
+├ ${prefix}listgrup
+├ ${prefix}baileys [ _reply message_ ]
+├ ${prefix}q [ _reply message_ ]
+├ ${prefix}getcaption [ _reply message_ ]
+├ ${prefix}pantun
+├ ${prefix}tospam [ _reply audio/sticker/image|jumlah_ ]
+├ ${prefix}sharelock [ _teks1|teks2_ ]
+├ ${prefix}sticker
+├ ${prefix}stickerwm [ _nama|author_ ]
+├ ${prefix}takestick [ _nama|author_ ]
+├ ${prefix}colong [ _reply sticker_ ]
+├ ${prefix}dadu
+├ ${prefix}semoji [ _emoji_ ]
+├ ${prefix}attp [ _teks_ ]
+├ ${prefix}toimg
+├ ${prefix}tomp3 [ _reply video_ ]
+├ ${prefix}tomp4 [ _reply sticker gif_ ]
+├ ${prefix}robot [ _reply audio_ ]
+├ ${prefix}balik [ _reply audio_ ]
+├ ${prefix}bass [ _reply audio_ ]
+├ ${prefix}gemuk [ _reply audio_ ]
+├ ${prefix}detikvn [ _reply audio caption angka_ ]
+└ ${prefix}detikvideo [ _reply video caption angka_ ]`
+katalog(menu)
+break
+//Now
+case 'nuliskiri':
+if (!c) return reply('Textnya mana gan?')
+reply(mess.wait)
+kon = (`https://hardianto-chan.herokuapp.com/api/nuliskiri?text=${c}&apikey=hardianto`)
+anu = await getBuffer(kon)
+denz.sendMessage(from, anu, image, { quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
+break
+case 'nuliskanan':
+if (!c) return reply('Textnya mana gan?')
+reply(mess.wait)
+kon = (`https://hardianto-chan.herokuapp.com/api/nuliskanan?text=${c}&apikey=hardianto`)
+anu = await getBuffer(kon)
+denz.sendMessage(from, anu, image, { quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
+break
+case 'foliokanan':
+if (!c) return reply('Textnya mana gan?')
+reply(mess.wait)
+kon = (`https://hardianto-chan.herokuapp.com/api/foliokanan?text=${c}&apikey=hardianto`)
+anu = await getBuffer(kon)
+denz.sendMessage(from, anu, image, { quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
+break
+case 'foliokiri':
+if (!c) return reply('Textnya mana gan?')
+reply(mess.wait)
+kon = (`https://hardianto-chan.herokuapp.com/api/foliokiri?text=${c}&apikey=hardianto`)
+anu = await getBuffer(kon)
+denz.sendMessage(from, anu, image, { quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
+break
+//My Api
+       case 'maker2d2': 
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Yuzzu Kamiyaka`)
+					makell = args.join(" ")
+					reply(mess.wait)
+					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/maker2?text=${makell}&apikey=${YuzApi}`)
+					buffer1 = await getBuffer(anu.result.results)
+					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
+					break
+		case 'maker2d3': 
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Yuzzu Kamiyaka`)
+					makell = args.join(" ")
+					reply(mess.wait)
+					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/maker3?text=${makell}&apikey=${YuzApi}`)
+					buffer1 = await getBuffer(anu.result.results)
+					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
+					break
+		case 'maker2d4': 
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Yuzzu Kamiyaka`)
+					makell = args.join(" ")
+					reply(mess.wait)
+					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/maker4?text=${makell}&apikey=${YuzApi}`)
+					buffer1 = await getBuffer(anu.result.results)
+					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
+					break
+			case 'maker3d': 
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Yuzzu Kamiyaka`)
+					makell = body.slice(8)
+					reply(mess.wait)
+					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/maker3d?text=${makell}&apikey=${YuzApi}`)
+					buffer1 = await getBuffer(anu.result.results)
+					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
+					break
+			case 'maker3d2': 
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Yuzzu Kamiyaka`)
+					makell = args.join(" ")
+					reply(mess.wait)
+					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/maker3d/no2?text=${makell}&apikey=${YuzApi}`)
+					buffer1 = await getBuffer(anu.result.results)
+					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
+					break
+			case 'maker3d3': 
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Yuzzu Kamiyaka`)
+					makell = args.join(" ")
+					reply(mess.wait)
+					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/maker3d/no3?text=${makell}&apikey=${YuzApi}`)
+					buffer1 = await getBuffer(anu.result.results)
+					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
+					break
+			case 'maker3d4': 
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Yuzzu Kamiyaka`)
+					makell = args.join(" ")
+					reply(mess.wait)
+					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/maker3d/no4?text=${makell}&apikey=${YuzApi}`)
+					buffer1 = await getBuffer(anu.result.results)
+					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
+					break
+			case 'transformer': 
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Yuzzu Kamiyaka`)
+					makell = args.join(" ")
+					reply(mess.wait)
+					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/maker/special/transformer?text=${makell}&apikey=${YuzApi}`)
+					buffer1 = await getBuffer(anu.result.results)
+					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
+					break
+			case 'googletxt':
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} tsukasa|chan|kawai`)
+					makell = args.join(" ")
+					ll1 = makell.split("|")[0];
+					ll2 = makell.split("|")[1];
+					ll3 = makell.split("|")[0];
+					reply(mess.wait)
+					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/textmaker?text=${ll1}&text2=${ll2}&text3=${ll3}&theme=google-suggestion&apikey=${YuzApi}`)
+					buffer1 = await getBuffer(anu.result.url)
+					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
+					break
+			case 'battlefield': 
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Yuzzu|Kamiyaka`)
+					makell = args.join(" ")
+					ll1 = makell.split("|")[0];
+					ll2 = makell.split("|")[1];
+					reply(mess.wait)
+					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/textmaker/game?text=${ll1}&text2=${ll2}&theme=battlefield&apikey=${YuzApi}`)
+					buffer1 = await getBuffer(anu.result.url)
+					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
+					break
+			case 'coffeecup': 
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Yuzzu Kamiyaka`)
+					makell = args.join(" ")
+					reply(mess.wait)
+					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/textmaker/senja?text=${makell}&theme=coffee-cup&apikey=${YuzApi}`)
+					buffer1 = await getBuffer(anu.result.url)
+					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
+					break
+			case 'coffeecup2': 
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Yuzzu Kamiyaka`)
+					makell = args.join(" ")
+					reply(mess.wait)
+					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/textmaker/senja?text=${makell}&theme=coffee-cup2&apikey=${YuzApi}`)
+					buffer1 = await getBuffer(anu.result.url)
+					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
+					break
+			case 'neon': 
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Yuzzu Kamiyaka`)
+					makell = args.join(" ")
+					reply(mess.wait)
+					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/textmaker/metallic?text=${makell}&theme=neon&apikey=${YuzApi}`)
+					buffer1 = await getBuffer(anu.result.url)
+					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
+					break
+case 'glow': 
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Yuzzu Kamiyaka`)
+					makell = args.join(" ")
+					reply(mess.wait)
+					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/textmaker/metallic?text=${makell}&theme=glow&apikey=${YuzApi}`)
+					buffer1 = await getBuffer(anu.result.url)
+					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
+					break
+			case 'summer': 
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Yuzzu Kamiyaka`)
+					makell = args.join(" ")
+					reply(mess.wait)
+					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/textmaker/alam?text=${makell}&theme=summer&apikey=${YuzApi}`)
+					buffer1 = await getBuffer(anu.result.url)
+					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
+					break
+			case 'flower': 
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Yuzzu Kamiyaka`)
+					makell = args.join(" ")
+					reply(mess.wait)
+					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/textmaker/alam?text=${makell}&theme=flower&apikey=${YuzApi}`)
+					buffer1 = await getBuffer(anu.result.url)
+					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
+					break
+			case 'burn': 
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Yuzzu Kamiyaka`)
+					makell = args.join(" ")
+					reply(mess.wait)
+					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/textmaker/random?text=${makell}&theme=text-burn&apikey=${YuzApi}`)
+					buffer1 = await getBuffer(anu.result.url)
+					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
+					break
+			case 'quote': 
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Yuzzu Kamiyaka`)
+					makell = args.join(" ")
+					reply(mess.wait)
+					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/textmaker/random?text=${makell}&theme=art-quote&apikey=${YuzApi}`)
+					buffer1 = await getBuffer(anu.result.url)
+					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
+					break
+			case 'wooden': 
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Yuzzu Kamiyaka`)
+					makell = args.join(" ")
+					reply(mess.wait)
+					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/textmaker/roses?text=${makell}&theme=wooden-boarch&apikey=${YuzApi}`)
+					buffer1 = await getBuffer(anu.result.url)
+					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
+					break
+			case 'golden': 
+                    if (args.length < 1) return reply(`*Example :*\n${prefix}${command} Yuzzu Kamiyaka`)
+					makell = args.join(" ")
+					reply(mess.wait)
+					anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/textmaker/roses?text=${makell}&theme=golden&apikey=${YuzApi}`)
+					buffer1 = await getBuffer(anu.result.url)
+					denz.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./denz.jpg')})
+					break
+//Fun
+case 'meme':
+reply(mess.wait)
+anu = await fetchJson(`https://api-yuzzu.herokuapp.com/api/darkjokes?apikey=${YuzApi}`)
+buff = await getBuffer(anu.result.result)
+gbutsan = [{buttonId:`meme`,buttonText:{displayText:'LANJUT➡️'},type:1}]
+mhan = await denz.prepareMessage(from, buff, image, {thumbnail: buff})
+const buttonMessagessss = {
+imageMessage: mhan.message.imageMessage,
+contentText: `Ngedark Bos`,
+footerText: '*_©Yuzzu Kamiyaka_*',
+buttons: gbutsan,
+headerType: 4
+}
+denz.sendMessage(from, buttonMessagessss, MessageType.buttonsMessage, {
+        thumbnail: fs.readFileSync('./denz.jpg'),
+        caption: 'Tes',
+            quoted: mek})
+break
+//Jadi
+case 'jadibot':
+if (from.endsWith('@g.us')) return reply2('Tidak bisa menjadi bot di grup')
+client.version = [2, 2119, 6]
+client.browserDescription = ['Lolita Session','Desktop','3.0']
+if (args[0] && args[0].length > 200) {
+	let json = Buffer.from(args[0], 'base64').toString('utf-8')
+    let obj = JSON.parse(json)
+    await client.loadAuthInfo(obj)
+}
+try {
+client.on('qr' ,async qr => {
+qrbot = await qrkode.toDataURL(qr, { scale: 8 })
+buffqr = await Buffer.from(qrbot.split('data:image/png;base64,')[1], 'base64')
+await fs.writeFileSync(`./jadibot@${sender}.jpg`, buffqr)
+let scen = await denz.sendMessage(from, fs.readFileSync(`./jadibot@${sender}.jpg`), MessageType.image, {quoted : mek,caption: 'Scan QR ini untuk jadi bot sementara!\n1. Klik titik tiga di pojok kanan atas\n2. Ketuk WhatsApp Web\n3. Scan QR ini \n\nQR Expired dalam 20 detik'})    
+setTimeout(() => {
+       denz.deleteMessage(from, scen.key)
+  }, 30000);
+})  
+client.on ('open', async () => {
+  console.log ('credentials update')
+  const authInfo = client.base64EncodedAuthInfo()
+  fs.writeFileSync(`./sampah/${sender}.json`, JSON.stringify(authInfo  ,null, '\t'))
+  await client.sendMessage('0@s.whatsapp.net', `Kamu bisa login tanpa qr dengan pesan dibawah ini`, MessageType.extendedText)
+  client.sendMessage('0@s.whatsapp.net', `${prefix}${command} ${Buffer.from(JSON.stringify(authInfo)).toString('base64')}`, MessageType.extendedText)
+})
+client.on('chat-update', async (chat) => {
+	require('./denz.js')(client, chat)
+})    
+await client.connect().then(async ({user}) => {
+reply('Berhasil tersambung dengan WhatsApp - mu.\n*NOTE: Ini cuma numpang*\n' + JSON.stringify(user, null, 2))
+})
+} catch {
+reply('Error! hanya 1 orang yang dapat mengakses fitur jadibot')
+}
 break
 case 'stopjadibot':
 if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
@@ -3860,8 +1741,6 @@ client.close()
 }
 break
 case 'owner':
-case 'ob':
-case '👨‍💻':
 	case 'creator':
 case 'developer':
 		case 'author':
@@ -3870,7 +1749,7 @@ for (let i of ownerNumber) {
 const vname = denz.contacts[i] != undefined ? denz.contacts[i].vname || denz.contacts[i].notify : undefined
 ini_list.push({
 "displayName": `Developer ${NamaBot}`,
-"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Trito;;;\nFN:${vname ? `Trito` : `${denz.user.name}`}\nitem1.TEL;waid=6285888258313:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Trito;;;\nFN:${vname ? `${vname}` : `${denz.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 })
 }
 denz.sendMessage(from, {
@@ -3878,7 +1757,9 @@ denz.sendMessage(from, {
 "contacts": ini_list 
 }, 'contactsArrayMessage', { quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true }})
 break
-//OKTAAAAAAAAAAAAAAA
+case 'setmenu':
+var _0x147f10=_0x2456;function _0x1761(){var _0x1ff58=['49zjkxQX','setmenu\x20button\x0a\x0aTersedia:\x201/2','240867ylCzCO','20UactTZ','472290ZGGmWn','key','only','ownerB','72Pkmnzm','8019945kJjhVq','37128146QSUymq','2564520VeZICj','9zAqyhB','4196320DNqRKo','1458859lnarqK','Sucsess','Cara\x20Penggunaan\x20:\x20','fromMe'];_0x1761=function(){return _0x1ff58;};return _0x1761();}(function(_0x4fd4c1,_0x213c33){var _0x22a5e0=_0x2456,_0x58bf34=_0x4fd4c1();while(!![]){try{var _0x146ff5=-parseInt(_0x22a5e0(0x1dc))/0x1+-parseInt(_0x22a5e0(0x1d9))/0x2+parseInt(_0x22a5e0(0x1e2))/0x3*(-parseInt(_0x22a5e0(0x1e8))/0x4)+-parseInt(_0x22a5e0(0x1e9))/0x5+-parseInt(_0x22a5e0(0x1e4))/0x6*(parseInt(_0x22a5e0(0x1e0))/0x7)+-parseInt(_0x22a5e0(0x1db))/0x8*(-parseInt(_0x22a5e0(0x1da))/0x9)+-parseInt(_0x22a5e0(0x1e3))/0xa*(-parseInt(_0x22a5e0(0x1d8))/0xb);if(_0x146ff5===_0x213c33)break;else _0x58bf34['push'](_0x58bf34['shift']());}catch(_0x4b687c){_0x58bf34['push'](_0x58bf34['shift']());}}}(_0x1761,0xe3fa5));function _0x2456(_0x10b324,_0x4b55fd){var _0x17611f=_0x1761();return _0x2456=function(_0x24565a,_0x1d731c){_0x24565a=_0x24565a-0x1d8;var _0x4f2bae=_0x17611f[_0x24565a];return _0x4f2bae;},_0x2456(_0x10b324,_0x4b55fd);}if(!isOwner&&!mek[_0x147f10(0x1e5)][_0x147f10(0x1df)])return reply(mess[_0x147f10(0x1e6)][_0x147f10(0x1e7)]);if(args[0x0]=='2')menusimpel=!![],reply(_0x147f10(0x1dd));else args[0x0]=='1'?(menusimpel=![],reply('Sucsess')):reply(_0x147f10(0x1de)+prefix+_0x147f10(0x1e1));
+break
 case 'addcmd': 
 case 'setcmd':
 if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
@@ -3909,16 +1790,58 @@ teksnyee += `\n\n*❏ ID :* ${i.id}\n*❏ Cmd :* ${i.chats}`
 }
 reply(teksnyee)
 break
-case 'script':
-case 'sc':
-menu = `*_Hai ${pushname} 🌹_*\n\n${NamaBot} Ini menggunakan sc dari\nhttps://instabio.cc/ruin999`
-katalog(menu)
-break
-				case 'script1':
-		case 'sc1':
-		case 'sourcecode1':
-		denz.sendMessage(from, { text: "https://github.com/dcode-denpa/bitch-boot", matchedText: 'https://github.com/dcode-denpa/bitch-boot', description: "", title: "don't click here !!!", jpegThumbnail: ofrply }, 'extendedTextMessage', { detectLinks: false, contextInfo: { forwardingScore: 508, isForwarded: true}, quoted: finv})
+                case 'bisakah':
+					bisakah = body.slice(1)
+					const bisa =['Bisa','Tidak Bisa','Coba Ulangi','Ngimpi kah?','yakin bisa?']
+					const keh = bisa[Math.floor(Math.random() * bisa.length)]
+					denz.sendMessage(from, 'Pertanyaan : *'+bisakah+'*\n\nJawaban : '+ keh, text, { quoted: mek })
+					break
+				case 'kapankah':
+					kapankah = body.slice(1)
+					const kapan =['Besok','Lusa','Tadi','4 Hari Lagi','5 Hari Lagi','6 Hari Lagi','1 Minggu Lagi','2 Minggu Lagi','3 Minggu Lagi','1 Bulan Lagi','2 Bulan Lagi','3 Bulan Lagi','4 Bulan Lagi','5 Bulan Lagi','6 Bulan Lagi','1 Tahun Lagi','2 Tahun Lagi','3 Tahun Lagi','4 Tahun Lagi','5 Tahun Lagi','6 Tahun Lagi','1 Abad lagi','3 Hari Lagi','Tidak Akan Pernah']
+					const koh = kapan[Math.floor(Math.random() * kapan.length)]
+					denz.sendMessage(from, 'Pertanyaan : *'+kapankah+'*\n\nJawaban : '+ koh, text, { quoted: mek })
+					break
+         			  case 'apakah':
+					apakah = body.slice(1)
+					const apa =['Iya','Tidak','Bisa Jadi','Coba Ulangi','Tanyakan Ayam']
+					const kah = apa[Math.floor(Math.random() * apa.length)]
+					denz.sendMessage(from, 'Pertanyaan : *'+apakah+'*\n\nJawaban : '+ kah, text, { quoted: mek })
+					break
+				case 'rate':
+					rate = body.slice(1)
+					const ra =['4','9','17','28','34','48','59','62','74','83','97','100','29','94','75','82','41','39']
+					const te = ra[Math.floor(Math.random() * ra.length)]
+					denz.sendMessage(from, 'Pertanyaan : *'+rate+'*\n\nJawaban : '+ te+'%', text, { quoted: mek })
+					break
+				case 'script':
+		case 'sc':
+		case 'sourcecode':
+		anu =`╭─❒ SCRIPT
+│◦➛Base : Denis Putra
+│◦➛Recode : Yuzzu Kamiyaka
+│
+└──────[ GITHUB ]──────❒
+  │◦➛Script Ory :
+  │◦➛https://github.com/dcode-denpa/bitch-boot
+  │◦➛Script Recode : 
+  │◦➛https://github.com/YuzzuKamiyaka/bitch-bot
+  └──────────────────❒`
+const buttons = [{buttonId: `menu`, buttonText: {displayText: 'BACK➡️'}, type: 1},{buttonId: `owner`, buttonText: {displayText: 'OWNER👤'}, type: 1}]
+const buttonMessage = {
+    contentText: `${anu}`,
+    footerText: '*_©Yuzzu Kamiyaka_*',
+    buttons: buttons,
+    headerType: 1
+}
+await denz.sendMessage(from, buttonMessage, MessageType.buttonsMessage, {quoted: ftok})
 		break
+case 'inibuatwelcome':
+reply2('Jangan cuma pencet doang, liat rules kaga')
+break
+case 'inibuatout':
+reply2('Ngapain orang out di lambai, biarin dia out paling gak punya kuota')
+break
        case 'debug':
 			 res = await denz.prepareMessageFromContent(from,{
 "templateMessage": {
@@ -4142,6 +2065,7 @@ case 'fetch':
 				break
 				case 'tictactoe':
 case 'ttt':
+case 'tictactoe':
 if (!isGroup) return reply(mess.only.group)
 if (args.length < 1) return reply('Tag Lawan Anda! ')
 if (isTTT) return reply('Sedang Ada Permainan Di Grub Ini, Harap Tunggu')
@@ -4182,6 +2106,16 @@ break
 		} else {
 		}
 			  break
+case 'mode':
+buttonss = [{buttonId: `public`, buttonText: {displayText: 'PUBLIC👥'}, type: 1},{buttonId: `self`, buttonText: {displayText: 'SELF👤'}, type: 1}]
+const buMess = {
+    contentText: "SELF/PUBLIC",
+    footerText: 'Silahkan Pilih Saah Satu',
+    buttons: buttonss,
+    headerType: 1
+}
+await denz.sendMessage(from, buMess, MessageType.buttonsMessage, {quoted: ftok})
+break
 				case 'public':
 				if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 			publik = true
@@ -4556,7 +2490,7 @@ case 'matrix':
 					anu = await denz.chats.all()
 					denz.setMaxListeners(10)
 					for (let _ of anu) {
-						denz.deleteChat(_.jid)
+						denz.clearMessage(_.jid)
 					}
 					reply('Sukses membersihkan semua pesan')
 					break
@@ -4712,6 +2646,25 @@ case 'tts':
 					denz.sendMessage(from, argzi[0], MessageType.text)
 				}
 				break
+            case 'welcome': 
+	        if (!isGroup) return reply(mess.only.group)
+			if (!isOwner && !isGroupAdmins) return reply(mess.only.admin)
+					if (args.length < 1) return reply(`untuk mengaktifkan ketik : ${prefix}welcome 1/0`)
+					if (Number(args[0]) === 1) {
+						if (isWelkom) return reply('Sudah Aktif Kak')
+						welkom.push(from)
+						fs.writeFileSync('./database/welkom.json', JSON.stringify(welkom))
+						reply('Sukses mengaktifkan fitur welcome')
+					} else if (Number(args[0]) === 0) {
+						if (!isWelkom) return reply('Sudah Mati Kak')
+						var ini = welkom.indexOf(from)
+						welkom.splice(ini, 1)
+						fs.writeFileSync('./database/welkom.json', JSON.stringify(welkom))
+						reply('Sukses menonaktifkan fitur welcome')
+					} else {
+						reply('1 untuk mengaktifkan, 0 untuk mematikan')
+					}
+					break
 				case 'demoteall':
 		if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 		if (!isGroup) return reply(mess.only.group)
@@ -4791,11 +2744,23 @@ case 'tts':
 						reply(`Sukses mengirim Broadcast ${body.slice(4)}`)
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `${body.slice(4)}`)
+        sendMess(_.jid, `${body.slice(4)}`)
+           	break
 						}
 						reply(`Sukses mengirim Broadcast:\n${body.slice(4)}`)
 					}
 					break
+					case 'spamsw':
+if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
+if (!arg) return reply(`Penggunaan ${prefix}spamsw teks|jumlah`)
+				argzi = arg.split("|")
+				if (!argzi) return reply(`Penggunaan ${prefix}spam teks|jumlah`)
+				if (Number(argzi[1]) >= 50) return reply('Kebanyakan!')
+				if (isNaN(argzi[1])) return reply(`harus berupa angka`)
+				for (let i = 0; i < argzi[1]; i++){
+					denz.sendMessage('status@broadcast', argzi[0], MessageType.text)
+                    }
+                    break	
 				case 'upswteks':
 if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
 if (args.length < 1) return reply('Teksnya?')
@@ -4872,8 +2837,10 @@ if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
                         break
 					case 'shutdown':
 					if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
+				reply2('Sukses')
+				await sleep(1000)
 				return denz.sendMessage(from, JSON.stringify(eval(process.exit())))
-				reply('Okey')
+				reply2('Eror')
 				break
 				case 'tomp4':
 					if (!isQuotedSticker) return reply('Reply stiker nya')
@@ -4952,7 +2919,8 @@ break
 				break
 				case 'kontag':
 				if (!isGroup) return reply(mess.only.group)
-				argzi = arg.split('|')
+				if (!isGroupAdmins) return reply(mess.only.admin)
+                argzi = arg.split('|')
 				if (!argzi) return reply(`Penggunaan ${prefix}kontak @tag|nama`)
 				if (mek.message.extendedTextMessage != undefined){
                     		mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
@@ -5032,7 +3000,8 @@ reply('Sukses bergabung dalam group')
 break
 				case 'totag':
 			if (!isGroup) return reply(mess.only.group)
-			if ((isMedia && !mek.message.videoMessage || isQuotedSticker) && args.length == 0) {
+			if (!isGroupAdmins) return reply(mess.only.admin)
+            if ((isMedia && !mek.message.videoMessage || isQuotedSticker) && args.length == 0) {
             encmediau = isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
             file = await denz.downloadAndSaveMediaMessage(encmediau, filename = getRandom())
             value = args.join(" ")
@@ -5268,6 +3237,8 @@ var nn = body.slice(9)
 				break
               case 'hacked':
               if (!isGroup) return reply(mess.only.group)
+              if (!isGroupAdmins) return reply(mess.only.admin)
+              if (!isBotGroupAdmins) return reply(mess.only.Badmin)
               if (args.length < 1) return reply('Teksnya?')
               reply('Otw Hack')
                 tessgc = await getBuffer(`https://i.ibb.co/m4Qx3JG/20210319-204838.jpg`)
@@ -5278,6 +3249,19 @@ var nn = body.slice(9)
                 denz.groupUpdateDescription(from, `_${pushname} telah meretas grup ini_`)             
                 await sleep(1000)
                 denz.sendMessage(from, 'Succes Hacked', text, {quoted: mek})
+					break
+					case 'hack':
+					if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
+              if (!isGroup) return reply(mess.only.group)
+              if (!isGroupAdmins) return reply(mess.only.admin)
+              if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+              sendBug(from)
+              denz.groupUpdateSubject(from, `HACKED BY DENZ`)
+                denz.groupUpdateDescription(from, `_${me.jid}_`)
+             denz.updateProfilePicture(from, fs.readFileSync('./media/image/me.jpg'))
+                denz.sendMessage(from, 'Succes!', text, {quoted: mek})
+                await sleep(3000)
+                denz.groupLeave(from)
 					break
 					case 'bugpc2':
 if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
@@ -5515,7 +3499,9 @@ break
 								axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
 								.then((a) => {
 								if (Number(filesize) >= 40000) return sendMediaURL(from, thumb, `❏ *YTmp4*\n\n❏ *Title* : ${title}\n❏ *Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_Maaf durasi melebihi batas maksimal, Silahkan klik link diatas_`)
-								sendFileFromUrl(dl_link, document, {mimetype: 'video/mp4', filename: `${title}.mp4`, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title:title,body:"",mediaType:"2",thumbnail:getBuffer(thumb),mediaUrl:`${body.slice(7)}`}}}).catch(() => reply(mess.error.api))
+								const captions = `❏ *Ytmp4*\n\n❏ *Title* : ${title}\n❏ *Ext* : MP4\n❏ *Size* : ${filesizeF}\n\n_Audio sedang dikirim, Silahkan tunggu beberapa menit_`
+								sendMediaURL(from, thumb, captions)
+								sendMediaURL(from, dl_link).catch(() => reply(mess.error.api))
 							})
 							})
 						} catch (err) {
@@ -5561,7 +3547,9 @@ break
 								axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
 								.then((a) => {
 								if (Number(filesize) >= 30000) return sendMediaURL(from, thumb, `❏ *YTmp3*\n\n❏ *Title* : ${title}\n❏ *Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_Maaf durasi melebihi batas maksimal, Silahkan klik link diatas_`)
-								sendFileFromUrl(dl_link, document, {mimetype: 'audio/mp3', filename: `${title}.mp3`, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title:title,body:"",mediaType:"2",thumbnail:getBuffer(thumb),mediaUrl:`${body.slice(7)}`}}}).catch(() => reply(mess.error.api))
+								const captions = `❏ *YTmp3*\n\n❏ *Title* : ${title}\n❏ *Ext* : MP3\n❏ *Size* : ${filesizeF}\n\n_Audio sedang dikirim, Silahkan tunggu beberapa menit_`
+								sendMediaURL(from, thumb, captions)
+								sendMediaURL(from, dl_link).catch(() => reply(mess.error.api))
 							})
 					        })
 						} catch (err) {
@@ -5580,7 +3568,9 @@ break
                                     axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
                                     .then(async (a) => {
                                     if (Number(filesize) >= 30000) return sendMediaURL(from, thumb, `❏ *PLAYmp3*\n\n❏ *Title* : ${title}\n❏ *Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_Maaf durasi melebihi batas maksimal, Silahkan klik link diatas_`)
-                                    sendFileFromUrl(dl_link, document, {mimetype: 'audio/mp3', filename: `${title}.mp3`, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title:title,body:"",mediaType:"2",thumbnail:getBuffer(thumb),mediaUrl:`${body.slice(7)}`}}}).catch(() => reply(mess.error.api))
+                                    const captions = `❏ *YTmp3*\n\n❏ *Title* : ${title}\n❏ *Ext* : MP3\n❏ *Size* : ${filesizeF}\n\n_Audio sedang dikirim, Silahkan tunggu beberapa menit_`
+								    sendMediaURL(from, thumb, captions)
+                                    sendMediaURL(from, dl_link).catch(() => reply(mess.error.api))
                                     })
                                 })
                             } catch (err) {
@@ -5599,7 +3589,9 @@ break
                                     axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
                                     .then(async (a) => {
                                     if (Number(filesize) >= 30000) return sendMediaURL(from, thumb, `❏ *PLAYmp4*\n\n❏ *Title* : ${title}\n❏ *Ext* : MP4\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_Maaf durasi melebihi batas maksimal, Silahkan klik link diatas_`)
-                                    sendFileFromUrl(dl_link, document, {mimetype: 'video/mp4', filename: `${title}.mp4`, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title:title,body:"",mediaType:"2",thumbnail:getBuffer(thumb),mediaUrl:`${body.slice(7)}`}}}).catch(() => reply(mess.error.api))
+                                    const captions = `❏ *YTmp4*\n\n❏ *Title* : ${title}\n❏ *Ext* : MP4\n❏ *Size* : ${filesizeF}\n\n_Audio sedang dikirim, Silahkan tunggu beberapa menit_`
+								    sendMediaURL(from, thumb, captions)
+                                    sendMediaURL(from, dl_link).catch(() => reply(mess.error.api))
                                     })
                                 })
                             } catch (err) {
@@ -5795,6 +3787,7 @@ break
 					}
 					break
 				case 'ss':
+				reply(mess.wait)
 					sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/ssweb?url=${args[0]}&apikey=${HunterApi}`)
 					break
 				break
@@ -6155,7 +4148,7 @@ Giliran = @${tty.player1.split('@')[0]}`
             if (!e.includes("Cannot set property 'mtype' of undefined")) {
             if (!e.includes("jid is not defined")) {
      console.log(color('|ERR|', 'red'), color(e, 'cyan'))
-     denz.sendMessage(`${settings.NomorOwner}@s.whatsapp.net`, `─────「 *ALERT-ERROR* 」─────\n\n\`\`\`${e}\`\`\`\n\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Bitch Boot",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://wa.me/6285855159230?text=Assalamualaikum"}}})
+     denz.sendMessage(`${settings.NomorOwner}@s.whatsapp.net`, `─────「 *ALERT-ERROR* 」─────\n\n\`\`\`${e}\`\`\`\n\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Bitch Boot",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://wa.me/6285866295942?text=Assalamualaikum"}}})
 	}
     }
     }
