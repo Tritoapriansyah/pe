@@ -1696,7 +1696,7 @@ break
 case 'jadibot':
 if (from.endsWith('@g.us')) return reply2('Tidak bisa menjadi bot di grup')
 client.version = [2, 2119, 6]
-client.browserDescription = ['Lolita Session','Desktop','3.0']
+client.browserDescription = ['Decode Denpa','Desktop','3.0']
 if (args[0] && args[0].length > 200) {
 	let json = Buffer.from(args[0], 'base64').toString('utf-8')
     let obj = JSON.parse(json)
